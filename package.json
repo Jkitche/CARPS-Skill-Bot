@@ -1,0 +1,10 @@
+{
+    "name": "carpsdiscordbot",
+    "version": "1.0.0",
+    "main": "bot.js",
+    "license": "MIT",
+    "dependencies": {
+        "discord.js": "^11.2.1",
+        "zlib-sync": "^0.1.3"
+    }
+}

@@ -1,0 +1,894 @@
+{
+    "aqua mortis": {
+        "name": "Aqua Mortis",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "bard song": {
+        "name": "Bard Song",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "blink": {
+        "name": "Blink",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "portal": {
+        "name": "Portal",
+        "elements": ["Air"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Blink", "level": "Master" }
+        ]
+    },
+    "disarm trap": {
+        "name": "Disarm Trap",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "hide": {
+        "name": "Hide",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "nerve pinch": {
+        "name": "Nerve Pinch",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "precision": {
+        "name": "Precision",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "backstab": {
+        "name": "Backstab",
+        "elements": ["Air"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Precision", "level": "Expert" }
+        ]
+    },
+    "ambush": {
+        "name": "Ambush",
+        "elements": ["Air"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "Once/level you may strike your target from behind with an Eviscerate. This skill is only usable with a 1-handed weapon.",
+        "requirements": [
+            { "name": "Backstab", "level": "Master" }
+        ],
+        "oneshots": [
+            {
+                "name": "Counterblow Ambush",
+                "level": "Grand Master",
+                "description": "You have developed your Ambush skill to the point where you are able to Ambush someone when they attack you. In order to initiate a Counterblow Ambush you must be dealt a damaging melee attack and not reduce it in any way, or resist it. Upon doing so you may expend a use of your Ambush skill and call, “Counterblow Eviscerate.” Your next attack against that target is an Eviscerate. In the case of a counterblow you are not required to strike your opponent in the back."
+            }
+        ]
+    },
+    "assassinate": {
+        "name": "Assassinate",
+        "elements": ["Air"],
+        "level": "Grand Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Ambush", "level": "Grand Master" }
+        ]
+    },
+    "scout's armor training": {
+        "name": "Scout's Armor Training",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "search": {
+        "name": "Search",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "sidestep": {
+        "name": "Sidestep",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "dodge": {
+        "name": "Dodge",
+        "elements": ["Air"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Sidestep", "level": "Expert" }
+        ]
+    },
+    "phase": {
+        "name": "Phase",
+        "elements": ["Air"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Sidestep", "level": "Master" },
+            { "name": "Dodge", "level": "Master" }
+        ]
+    },
+    "trade": {
+        "name": "Trade",
+        "elements": ["Air", "Fire", "Earth", "Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "trap making": {
+        "name": "Trap Making",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "undetectable lie": {
+        "name": "Undetectable Lie",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "scry shield": {
+        "name": "Scry Shield",
+        "elements": ["Air"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Undetectable Lie", "level": "Expert" }
+        ]
+    },
+    "urban knowledge": {
+        "name": "Urban Knowledge",
+        "elements": ["Air"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "weapon damage": {
+        "name": "Weapon Damage",
+        "elements": ["Air", "Fire", "Water", "Earth"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "finesse": {
+        "name": "Finesse",
+        "elements": ["Air"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Weapon Damage", "level": "Expert" }
+        ]
+    },
+    "vorpal": {
+        "name": "Vorpal",
+        "elements": ["Air"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Weapon Damage", "level": "Master" },
+            { "name": "Finesse", "level": "Expert" }
+        ]
+    },
+    "disarm": {
+        "name": "Disarm",
+        "elements": ["Air"],
+        "level": "Grand Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Weapon Damage", "level": "Grand Master" },
+            [
+                { "name": "Speed of Blade", "level": "Master" },
+                { "name": "Vorpal", "level": "Master" }
+            ]
+        ]
+    },
+    "alchemy": {
+        "name": "Alchemy",
+        "elements": ["Earth"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "animal ken": {
+        "name": "Animal Ken",
+        "elements": ["Earth"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "animalism": {
+        "name": "Animalism",
+        "elements": ["Earth"],
+        "level": "Grand Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Animal Ken", "level": "Grand Master" }
+        ]
+    },
+    "herbalism": {
+        "name": "Herbalism",
+        "elements": ["Earth"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "resist pain": {
+        "name": "Resist Pain",
+        "elements": ["Earth"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "resist damage": {
+        "name": "Resist Damage",
+        "elements": ["Earth"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Resist Pain", "level": "Expert" }
+        ]
+    },
+    "resist effect": {
+        "name": "Resist Effect",
+        "elements": ["Earth"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Resist Pain", "level": "Master" },
+            { "name": "Resist Damage", "level": "Master" }
+        ]
+    },
+    "shield defense": {
+        "name": "Shield Defense",
+        "elements": ["Earth", "Fire"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "strength": {
+        "name": "Strength",
+        "elements": ["Earth"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "bash": {
+        "name": "Bash",
+        "elements": ["Earth"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "Once/level you may deliver a numbered weapon attack as Crush in place of Edge, Blunt or Claw OR in addition to an enhancer such as Fire, Earth or Magic. This skill is only usable with a blunt weapon. For example, if you normally deal 10 Blunt, you can use Bash to deal 10 Crush instead. If you normally deal 10 Water, you would deal 10 Crushing Water instead.",
+        "requirements": [
+            { "name": "Strength", "level": "Expert" }
+        ]
+    },
+    "crush": {
+        "name": "Crush",
+        "elements": ["Earth"],
+        "level": "Grand Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Bash", "level": "Expert" },
+            { "name": "Strength", "level": "Grand Master" }
+        ]
+    },
+    "smash": {
+        "name": "Smash",
+        "elements": ["Earth"],
+        "level": "Grand Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Crush", "level": "Master" },
+            { "name": "Strength", "level": "Grand Master" }
+        ]
+    },
+    "toughness": {
+        "name": "Toughness",
+        "elements": ["Earth"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "endurance": {
+        "name": "Endurance",
+        "elements": ["Earth"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Toughness", "level": "Expert" }
+        ]
+    },
+    "quick healing": {
+        "name": "Quick Healing",
+        "elements": ["Earth"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Toughness", "level": "Master" },
+            { "name": "Endurance", "level": "Master" }
+        ]
+    },
+    "knockback": {
+        "name": "Knockback",
+        "elements": ["Earth"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Strength", "level": "Expert" },
+            { "name": "Weapon Damage", "level": "Expert" }
+        ]
+    },
+    "stun": {
+        "name": "Stun",
+        "elements": ["Earth"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Strength", "level": "Master" },
+            { "name": "Weapon Damage", "level": "Master" }
+        ]
+    },
+    "all weapons": {
+        "name": "All Weapons",
+        "elements": ["Fire"],
+        "level": "Basic",
+        "type": "One Shot",
+        "description": "This one-shot provides the knowledge to use any regular or artist weapon.",
+        "requirements": []
+    },
+    "dual wield": {
+        "name": "Dual Wield",
+        "elements": ["Fire", "Air"],
+        "level": "Basic",
+        "type": "One Shot",
+        "description": "",
+        "requirements": []
+    },
+    "evoke fear": {
+        "name": "Evoke Fear",
+        "elements": ["Fire"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "rally": {
+        "name": "Rally",
+        "elements": ["Fire"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Evoke Fear", "level": "Expert" }
+        ]
+    },
+    "coordination": {
+        "name": "Coordination",
+        "elements": ["Fire"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Rally", "level": "Master" }
+        ]
+    },
+    "tactics": {
+        "name": "Tactics",
+        "elements": ["Fire"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Coordination", "level": "Master" }
+        ]
+    },
+    "gem craft": {
+        "name": "Gem Craft",
+        "elements": ["Fire"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "rage": {
+        "name": "Rage",
+        "elements": ["Fire"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "delay effect": {
+        "name": "Delay Effect",
+        "elements": ["Fire"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Rage", "level": "Master" }
+        ]
+    },
+    "resist fear": {
+        "name": "Resist Fear",
+        "elements": ["Fire"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "taunt": {
+        "name": "Taunt",
+        "elements": ["Fire"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Resist Fear", "level": "Expert" }
+        ]
+    },
+    "smithing": {
+        "name": "Smithing",
+        "elements": ["Fire"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "soldier's armor training": {
+        "name": "Soldier's Armor Training",
+        "elements": ["Fire"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "resist physical": {
+        "name": "Resist Physical",
+        "elements": ["Fire"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Soldier's Armor Training", "level": "Master" }
+        ]
+    },
+    "block": {
+        "name": "Block",
+        "elements": ["Fire"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            [
+                { "name": "Weapon Damage", "level": "Expert" },
+                { "name": "Shield Defense", "level": "Expert" }
+            ]
+        ]
+    },
+    "parry": {
+        "name": "Parry",
+        "elements": ["Fire"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Block", "level": "Expert" }
+        ]
+    },
+    "riposte": {
+        "name": "Riposte",
+        "elements": ["Fire"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Block", "level": "Master" },
+            { "name": "Parry", "level": "Master" }
+        ]
+    },
+    "slay": {
+        "name": "Slay",
+        "elements": ["Fire"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Weapon Damage", "level": "Expert" }
+        ]
+    },
+    "eviscerate": {
+        "name": "Eviscerate",
+        "elements": ["Fire"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Weapon Damage", "level": "Master" },
+            { "name": "Slay", "level": "Expert" }
+        ]
+    },
+    "death blow": {
+        "name": "Death Blow",
+        "elements": ["Fire"],
+        "level": "Grand Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Weapon Damage", "level": "Grand Master" },
+            { "name": "Eviscerate", "level": "Master" }
+        ]
+    },
+    "speed of blade": {
+        "name": "Speed of Blade",
+        "elements": ["Fire"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Weapon Damage", "level": "Master" }
+        ]
+    },
+    "press": {
+        "name": "Press",
+        "elements": ["Fire"],
+        "level": "Grand Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Weapon Damage", "level": "Grand Master" },
+            { "name": "Speed of Blade", "level": "Master" }
+        ]
+    },
+    "air magic": {
+        "name": "Air Magic",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "augury": {
+        "name": "Augury",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "soothsaying": {
+        "name": "Soothsaying",
+        "elements": ["Water"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Augury", "level": "Expert" }
+        ]
+    },
+    "detect lie": {
+        "name": "Detect Lie",
+        "elements": ["Water"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Soothsaying", "level": "Master" }
+        ]
+    },
+    "destruction magic": {
+        "name": "Destruction Magic",
+        "elements": ["Water"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Fire Magic", "level": "Master" },
+            { "name": "Air Magic", "level": "Master" }
+        ]
+    },
+    "disenchant": {
+        "name": "Disenchant",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "dream magic": {
+        "name": "Dream Magic",
+        "elements": ["Water"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Air Magic", "level": "Master" },
+            { "name": "Water Magic", "level": "Master" }
+        ]
+    },
+    "earth magic": {
+        "name": "Earth Magic",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "fire magic": {
+        "name": "Fire Magic",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "first aid": {
+        "name": "First Aid",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "One Shot",
+        "description": "",
+        "requirements": []
+    },
+    "healing": {
+        "name": "Healing",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "First Aid", "level": "Basic" }
+        ]
+    },
+    "cure disease/toxin": {
+        "name": "Cure Disease/Toxin",
+        "elements": ["Water"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Healing", "level": "Expert" }
+        ]
+    },
+    "mend wound": {
+        "name": "Mend Wound",
+        "elements": ["Water"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Healing", "level": "Expert" }
+        ]
+    },
+    "remove wound": {
+        "name": "Remove Wound",
+        "elements": ["Water"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Healing", "level": "Master" }
+        ]
+    },
+    "raise dead": {
+        "name": "Raise Dead",
+        "elements": ["Water"],
+        "level": "Grand Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Healing", "level": "Grand Master" }
+        ]
+    },
+    "knowledge": {
+        "name": "Knowledge",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "research": {
+        "name": "Research",
+        "elements": ["Water"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Knowledge", "level": "Expert" },
+            { "name": "Read/Write", "level": "Basic" }
+        ]
+    },
+    "mana": {
+        "name": "Mana",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Read Magic", "level": "Basic"}
+        ]
+    },
+    "protection magic": {
+        "name": "Protection Magic",
+        "elements": ["Water"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Earth Magic", "level": "Master" },
+            { "name": "Water Magic", "level": "Master" }
+        ]
+    },
+    "radiance magic": {
+        "name": "Radiance Magic",
+        "elements": ["Water"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Earth Magic", "level": "Master" },
+            { "name": "Fire Magic", "level": "Master" }
+        ]
+    },
+    "read/write": {
+        "name": "Read/Write",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "One Shot",
+        "description": "",
+        "requirements": []
+    },
+    "read magic": {
+        "name": "Read Magic",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "One Shot",
+        "description": "",
+        "requirements": []
+    },
+    "relic crafting": {
+        "name": "Relic Crafting",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Read/Write", "level": "Basic" },
+            { "name": "Read Magic", "level": "Basic" }
+        ]
+    },
+    "resist elements": {
+        "name": "Resist Elements",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "resist magic": {
+        "name": "Resist Magic",
+        "elements": ["Water"],
+        "level": "Expert",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Resist Elements", "level": "Expert" }
+        ]
+    },
+    "reflect magic": {
+        "name": "Reflect Magic",
+        "elements": ["Water"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Resist Elements", "level": "Master" },
+            { "name": "Resist Magic", "level": "Master" }
+        ]
+    },
+    "ritualism": {
+        "name": "Ritualism",
+        "elements": ["Water"],
+        "level": "Master",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Earth Magic", "level": "Master" },
+            { "name": "Fire Magic", "level": "Master" },
+            { "name": "Water Magic", "level": "Master" },
+            { "name": "Air Magic", "level": "Master" }
+        ]
+    },
+    "sense magic": {
+        "name": "Sense Magic",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    },
+    "spell weaving": {
+        "name": "Spell Weaving",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": [
+            { "name": "Sense Magic", "level": "Master"}
+        ]
+    },
+    "water magic": {
+        "name": "Water Magic",
+        "elements": ["Water"],
+        "level": "Basic",
+        "type": "Skill",
+        "description": "",
+        "requirements": []
+    }
+}
