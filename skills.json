@@ -4,7 +4,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Each level of this skill provides 5PP which can be used to craft Alchemical Poisons. Poisons have three classifications: acids, toxins and venoms. These items are designed to deceive, injure and negatively-alter living creatures. All Poisons at the base level are ingested liquids and must be drunk to take effect. If placed in another liquid that liquid will now hold the effects of the Poisons for the first person to drink the liquid (if multiple doses are placed in the same liquid then one drink uses up one dose). To create an Alchemical Poison the following must ALL be true: \n1. You must have a copy of the recipe for the Poison you wish to create; \n2. You must have a container to hold the Poison (vial for liquid/paste or gas globe (Packet) for diffused/dispersed); \n3. Your Aqua Mortis skill must be equal to or higher than the level of the recipe you are crafting; \n4. If the recipe is level 10 expendable or higher it requires the expenditure of one Rare material; and \n5. A Production Marshal must witness the crafting of the Poison and initial your temp tag. \n\nAll those who study Aqua Mortis have the ability to identify Alchemical Poisons by spending 100 seconds examining it. After this time is done they may look at the tag and if it is an Alchemical Poison (not a Potion) they are able to tell what it is. ",
         "requirements": []
     },
     "bard song": {
@@ -12,7 +12,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "This skill may be used once/level/re-pop and requires that the bard perform for at least 30 seconds/level of the Song. All bards must maintain a songbook that contains the description of the performance’s effects. Songs can be taught by any Bard that possesses them to any bard of sufficient level. In order to teach a song the Bard doing the teaching must expend a use of the skill and perform the song (cannot Quick Song when teaching) after which a Temp Tag may be filled out for the learning Bard to add the song to their Song Book (the temp tag must be signed by a Production Marshal as normal). Songs are taught separately from levels of Bard Song. \n\nA bard may only perform Songs that are equal to or below their level of the Bard Song skill. Each Song that provides a beneficial effect must occupy one of the target’s Buff Slots. All Bard Songs are Charm effects.",
         "requirements": []
     },
     "blink": {
@@ -20,7 +20,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may activate this by placing your hand on top of your head and calling, 'Blink.' Once called you become out-of-phase for 10 seconds. While out-of phase you are immune to damage and may only move. You are not immune to Disenchant or Solidify. While moving you leave a visible image of yourself (you are not invisible while out-of-phase) wherever you go and your movement is still limited by inanimate objects (you can’t Blink through walls or doors, but you could Blink between two people provided you could actually fit between them). This skill can be used while under movement-impairing effects (provided you are still able to make the hand motion and say, 'Blink') but it does not remove the effect, once the Blink ends you are once again under the movement-impairing effect. If hit with a Disenchant or Solidify while in a Blink, you are immediately pulled out of it as you cannot resist while Blinking. Being disenchanted out of a Blink will also remove all your buffs.",
         "requirements": []
     },
     "portal": {
@@ -28,7 +28,7 @@
         "elements": ["Air"],
         "level": "Master",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may open a Portal from your current location to anywhere on your current Plane that you are familiar with. To open a Portal you must designate a roughly doorway sized opening as the Portal and somehow mark that it is an active Portal (such as hanging a cloak from a tree/doorway). A Portal will last for one minute. To use the Portal you must touch it and perform a three-count. “One I Portal, two I Portal, three I Portal.” If your count is interrupted, your transit fails and you may try again provided the Portal is still active. Travel through a Portal is not instantaneous, but while traveling you may not perform any actions aside from talking (you may not activate items, cast spells, or use any skills even if they would only require verbal or mental ability to use). A Disenchant or any other magic-disrupting effects will destroy this Portal. You can only Portal to an area that you are familiar with. Becoming familiar with an area takes roughly 10 minutes of time and cannot be done while in combat. If you have not done this, you will not be able to Portal to your chosen destination.",
         "requirements": [
             { "name": "Blink", "level": "Master" }
         ]
@@ -38,7 +38,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may Disarm any simple trap. Simple traps are those that do not include magic, area based effects or augmented to be unavoidable or irresistible.",
         "requirements": []
     },
     "hide": {
@@ -46,7 +46,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may Hide yourself on a five-count. Anyone who watches you at any point during the five-count to Hide knows where you are. This skill may only be used if you are in a location or near an object which could physically hide your presence. You may remain hidden for as long as you wish, but once you have moved from your hiding spot, or perform another action that draws attention, you are no longer hidden. Actions that draw attention include speaking, repairing armor, healing or using any active skill. To signify that you are hidden simply cross your arms in front of you.",
         "requirements": []
     },
     "nerve pinch": {
@@ -54,7 +54,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may strike a target from behind and declare, 'Physical Sleep.' Unless the attack is resisted, they fall asleep for five minutes. A sleeping target may be awakened if someone spends an uninterrupted 30-count shaking them awake or via other abilities that specifically state they remove a sleep effect. This skill is only usable with a fist phys rep.",
         "requirements": []
     },
     "precision": {
@@ -62,7 +62,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Each level of this skill allows you to deal +2 points of damage with any 1-handed weapon you are trained in provided you strike your target from behind. This skill is only usable with a 1-handed weapon.",
         "requirements": []
     },
     "backstab": {
@@ -70,7 +70,7 @@
         "elements": ["Air"],
         "level": "Expert",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may deliver an attack from behind your target for +100 damage. This skill is only usable with a 1-handed weapon.",
         "requirements": [
             { "name": "Precision", "level": "Expert" }
         ]
@@ -97,7 +97,7 @@
         "elements": ["Air"],
         "level": "Grand Master",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may strike your target from behind and call, 'Assassinate' This attack is the equivalent of three deathdealing attacks that must each be defended against individually. This skill is only usable with a 1-handed weapon.",
         "requirements": [
             { "name": "Ambush", "level": "Grand Master" }
         ]
@@ -115,7 +115,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Each level of this skill provides you with 20 Armor Points when you are wearing armor that is approved by an Armor Marshal. Armor can be padded, leather, scale, chain or plate. See the chart at the end of Chapter Eight: Phys Reps for details on armor coverage and quality.",
         "requirements": []
     },
     "sidestep": {
@@ -123,7 +123,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level when hit by a numerical effect you may declare, 'Sidestep' and half all numbers in the attack call (rounding down). This skill may be used twice to reduce the effect to 0. You may not use this skill if your movement is impaired in any way. This skill may not be used on Point or Area of Effect delivered effects",
         "requirements": []
     },
     "dodge": {
@@ -131,7 +131,7 @@
         "elements": ["Air"],
         "level": "Expert",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level when hit by an effect you may declare, 'Dodge' and not take the effect. You may not use this skill if your movement is impaired in any way.",
         "requirements": [
             { "name": "Sidestep", "level": "Expert" }
         ]
@@ -141,7 +141,7 @@
         "elements": ["Air"],
         "level": "Master",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level when hit by any effect you may declare, 'Phase' and not take that effect.",
         "requirements": [
             { "name": "Sidestep", "level": "Master" },
             { "name": "Dodge", "level": "Master" }
@@ -152,7 +152,7 @@
         "elements": ["Air", "Fire", "Earth", "Water"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "When you first purchase this skill you choose a specific trade skill that it represents. A trade skill is any skill which is not already covered by another skill in the game. Examples of trade skills are Farmer, Hunter, Cobbler, Cooper, Barrister, Book Making, Ferrier, Stable Boy, Brewer, Weaver or Cook just to name a few. \n\nEach level of this skill allows you to do one of the following: \n Provide basic upkeep at check-in for a single person. \n Collect one Verlan at check-in.\n Collect two crafting material sticks of the color appropriate with the Element you purchased the skill in. If your Trade is a Fire skill, then you would get red sticks. If your trade is an Earth skill then it would be green sticks, etc.",
         "requirements": []
     },
     "trap making": {
@@ -160,7 +160,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Each level of this skill provides 5PP which can be used to craft Traps. Most Traps once crafted can be moved before being set (common sense applies, you clearly can’t move a Pit Trap). Setting a Trap takes 30 seconds of time and once a Trap is set, moving it causes the Trap to trigger.\n\nTo create a Trap the following must ALL be true:\n  1. You must have a copy of the recipe for the Trap you wish to create;\n  2. You must have a phys rep for the Trap or immediately place and arm the Trap via the tag created;\n  3. Your Trap Making skill must be equal to or higher than the level of the recipe you are crafting;\n  4. If the recipe is a level 10 expendable or higher it requires the expenditure of one Rare material;\n  5. Permanent items will have different material requirements based on the recipe; and\n  6. A Production Marshal must witness the crafting of the Trap and initial your temp tag.",
         "requirements": []
     },
     "undetectable lie": {
@@ -168,7 +168,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may Lie while under the effects of a Speak Truth or Detect Lie skill.",
         "requirements": []
     },
     "scry shield": {
@@ -176,7 +176,7 @@
         "elements": ["Air"],
         "level": "Expert",
         "type": "Skill",
-        "description": "",
+        "description": "For each level of this skill you automatically stop one divination used upon you each re-pop. So if you have level 3 in this skill, the first three divinations used upon you automatically fail. Note: not all divinations reduce the level of your Scry Shield. Consult the specific divination skill for specifics.",
         "requirements": [
             { "name": "Undetectable Lie", "level": "Expert" }
         ]
@@ -186,7 +186,7 @@
         "elements": ["Air"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may do one of the following: \n  1. Ask a basic question about an urban setting. This question would generally need to be answerable with a number of words equal to or lower than your level of urban knowledge. \n  2. You may cover the basic upkeep for one person at check-in. \n  3. You may acquire the location of an NPC with the ability to teach a specific skill. This ability requires the expenditure of one level of Urban Knowledge/level of the skill you are trying to locate a teacher for, including all pre-req levels for the skill. You can only find a teacher for skills of Grand Master level or lower. For Example; if you are trying to locate a teacher for level 1 of the Slay skill, which requires level 3 Weapon Damage, you would need to expend four uses of this skill to find a teacher who can teach level 1 Slay. You may gather this information over time, but to do this you must keep a logbook of your knowledge and have a GM initial your expenditure towards a specific teacher if it is being done over multiple re-pops or events.\n  4. You may analyze a lock, determining what level the lock is, if it has an traps upon it and if it has been made extra difficult to pick.",
         "requirements": []
     },
     "weapon damage": {
@@ -194,7 +194,7 @@
         "elements": ["Air", "Fire", "Water", "Earth"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Each level of this skill allows you to deal one additional point of damage with any 1-handed weapon you are trained in or 1½ points of damage (round down) with any great weapon you are trained in.",
         "requirements": []
     },
     "finesse": {
@@ -202,7 +202,7 @@
         "elements": ["Air"],
         "level": "Expert",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may deliver a numbered weapon attack as Vorpal in place of Edge or Claw OR in addition to an enhancer such as Fire, Earth, or Magic. This skill is only usable with an edged weapon. For example, if you normally deal 10 Edge, you can use Finesse to deal 10 Vorpal instead. If you normally deal 10 Water, you would deal 10 Vorpal Water instead.",
         "requirements": [
             { "name": "Weapon Damage", "level": "Expert" }
         ]
@@ -212,7 +212,7 @@
         "elements": ["Air"],
         "level": "Master",
         "type": "Skill",
-        "description": "",
+        "description": "You may now deal one point of Vorpal damage/level of this skill with every weapon attack instead of your regular damage but in addition to damage qualifier type. Other skills that boost damage cannot be used in conjunction with Vorpal, only the following Vorpal one-shots work. This skill is only usable with an edged weapon. For example, if your weapon deals Fire damage normally it would deal Vorpal Fire with this skill, not just Fire.",
         "requirements": [
             { "name": "Weapon Damage", "level": "Master" },
             { "name": "Finesse", "level": "Expert" }
@@ -223,7 +223,7 @@
         "elements": ["Air"],
         "level": "Grand Master",
         "type": "Skill",
-        "description": "",
+        "description": "Once/level you may Disarm your opponent by hitting one of their weapons with yours and calling, 'Disarm'",
         "requirements": [
             { "name": "Weapon Damage", "level": "Grand Master" },
             [
@@ -237,7 +237,7 @@
         "elements": ["Earth"],
         "level": "Basic",
         "type": "Skill",
-        "description": "",
+        "description": "Each level of this skill provides 5PP which can be used to craft Alchemical Potions. These items are designed to enhance, protect and positively alter living creatures. All alchemies at the base level are ingested liquids and must be drunk to take effect. If placed in another liquid that liquid will now hold the effects of the Alchemy for the first person to drink the liquid (if multiple doses are placed in the same liquid then one drink uses up one dose).\n\nTo create an Alchemical Potion the following must ALL be true: \n 1. You must have a copy of the recipe for the Potion you wish to create; \n  2. You must have a container to hold the Potion (vial for liquid/paste or gas globe (Packet) for diffused/dispersed); \n  3. Your Alchemy skill must be equal to or higher than the level of the recipe you are crafting; \n  4. If the recipe is level 10 expendable or higher it requires the expenditure of one Rare material; \n  5. A Production Marshal must witness the crafting of the Potion and initial your temporary (temp) tag; and \n  6. All Potion effects last until re-pop or used, unless the recipe specifically states otherwise. \n\nAll alchemists also have the ability to identify Alchemical Potions by spending 100 seconds examining it. After this time is done they may look at the tag and if it is an alchemical Potion (not a Poison) they are able to tell what it is.",
         "requirements": []
     },
     "animal ken": {

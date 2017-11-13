@@ -7,17 +7,17 @@ client.on('ready', () => {
 });
 
 function skillEmbed(skill) {
-    var requirements = "";
+    var requirements = [];
     skill.requirements.forEach(function(requirement) {
-        requirements += (requirement.level + " " + requirement.name + " ").trim();
+        requirements.push(requirement.level + " " + requirement.name);
     });
+    requirements = requirements.join(', ');
 
     const description = [
         "**Element(s):** " + skill['elements'].join(', '),
         "**Level:** " + skill['level'],
-        "**Requirements:** " + requirements,
-        "**Description:** " + skill['description'],
-        "**One Shots: ** " + oneshots
+        "**Requirements:** " + (requirements.length ? requirements : "None"),
+        "**Description:** " + (skill['description'] ? skill['description'] : "Coming Soon..."),
     ];
     return {
         "title": skill.name,
@@ -40,6 +40,10 @@ function skillEmbed(skill) {
 }
 
 client.on('message', message => {
+    if (message.content.includes('SkillBot') && message.content.includes('drunk')) {
+        message.channel.send("I only had tii martoonies, ossifer! *hick*");
+    }
+
     const commandRegex = /\/skill\s+(.+)/g;
     const matches = commandRegex.exec(message.content);
     if (matches) {
