@@ -27,7 +27,9 @@ const bot: CARPSSkillBot = new CARPSSkillBot(
 	config,
 	new Client(),
 	new EmbedGenerator(),
-	new SkillRepository(),
+	new SkillRepository(
+		logger,
+	),
 	logger,
 );
 
