@@ -58,7 +58,7 @@ export default class EmbedGenerator implements IEmbedGenerator {
 			: "None";
 
 		return [
-			"**ISkillElement(s):** " + skill.elements.join(", "),
+			"**Element(s):** " + skill.elements.join(", "),
 			"**Level:** " + skill.level,
 			"**Requirements:** " + skillRequirements,
 			"**Description:** " + skillDescription,
