@@ -4,11 +4,13 @@
 	"main": "./src/index.js",
 	"license": "MIT",
 	"scripts": {
-		"build": "./node_modules/webpack/bin/webpack.js"
+		"build": "./node_modules/webpack/bin/webpack.js",
+		"start:prod": "NODE_ENV = production; yarn start"
 	},
 	"dependencies": {
 		"@types/node": "^10.12.17",
-		"discord.js": "^11.4.2"
+		"discord.js": "^11.4.2",
+		"winston": "^3.1.0"
 	},
 	"devDependencies": {
 		"awesome-typescript-loader": "^5.2.1",

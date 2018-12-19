@@ -1,4 +1,4 @@
-export default interface Config {
+export default interface IConfig {
 	botName: string;
 	clientId: number;
 	prefix: string;

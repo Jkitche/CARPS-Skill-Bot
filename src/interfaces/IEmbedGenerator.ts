@@ -1,11 +1,11 @@
-import SkillEmbed from "../types/SkillEmbed";
-import Skill from "../SkillInterface";
+import ISkill from "../SkillInterface";
+import ISkillEmbed from "../types/ISkillEmbed";
 
 export default interface IEmbedGenerator {
 
 	/**
-	 * @param {Skill} skill
-	 * @returns {SkillEmbed}
+	 * @param {ISkill} skill
+	 * @returns {ISkillEmbed}
 	 */
-	getSkillEmbed(skill: Skill): SkillEmbed;
+	getSkillEmbed(skill: ISkill): ISkillEmbed;
 }

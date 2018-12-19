@@ -1,22 +1,18 @@
-import Skill from './SkillInterface';
-import * as skills from './skills.json';
-import ISkillRepository from './interfaces/ISkillRepository';
-
+import ISkillRepository from "./interfaces/ISkillRepository";
+import ISkill from "./SkillInterface";
+import * as skills from "./skills.json";
 
 export default class SkillRepository implements ISkillRepository {
 
 	/**
 	 * @param {string} skillName
-	 * @returns {Skill}
+	 * @returns {ISkill}
 	 */
-	public getSkillByName(skillName: string): Skill {
-		const skillList: Array<Skill> = skills as Array<Skill>;
-		const matchedSkills: Array<Skill> = skillList.filter(
-			(skill: Skill) => {
-				const contains = skill.name.toLowerCase().includes(skillName.toLowerCase());
-				return contains;
-			}
-		);
+	public getSkillByName(skillName: string): ISkill {
+		const skillList: ISkill[] = skills as ISkill[];
+		const matchedSkills: ISkill[] = skillList.filter((skill: ISkill) => {
+			return skill.name.toLowerCase().includes(skillName.toLowerCase());
+		});
 		return matchedSkills[0];
 	}
 }

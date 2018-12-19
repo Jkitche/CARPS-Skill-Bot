@@ -1,7 +1,6 @@
 import { SkillLevel } from "../SkillInterface";
 
-export default interface OneShot {
+export default interface ISkillRequirement {
 	name: string;
 	level: SkillLevel;
-	description: string;
 }

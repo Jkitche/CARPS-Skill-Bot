@@ -6,7 +6,7 @@
 		"indent": [true, "tabs", 4],
 		"quotemark": [true, "double", "avoid-escape", "avoid-template"],
 		"object-literal-sort-keys": false,
-		"max-line-length": false,
+		"max-line-length": false
 	},
 	"rulesDirectory": []
 }

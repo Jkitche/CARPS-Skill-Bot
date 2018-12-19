@@ -1,14 +1,14 @@
-import SkillRequirement from "./types/SkillRequirement";
+import ISkillRequirement from "./types/ISkillRequirement";
 
 export type SkillLevel = "Basic" | "Expert" | "Master" | "Grand Master";
 export type SkillType = "Skill" | "One Shot";
 export type Element = "Air" | "Fire" | "Water" | "Earth";
 
-export default interface Skill {
+export default interface ISkill {
 	name: string;
-	elements: Array<Element>;
+	elements: Element[];
 	level: SkillLevel;
 	type: SkillType;
 	description: string;
-	requirements: Array<SkillRequirement>;
+	requirements: ISkillRequirement[];
 }

@@ -1,10 +1,10 @@
-import Skill from "../SkillInterface";
+import ISkill from "../SkillInterface";
 
 export default interface ISkillRepository {
 
 	/**
 	 * @param {string} name
-	 * @returns {Skill}
+	 * @returns {ISkill}
 	 */
-	getSkillByName(name: string): Skill;
+	getSkillByName(name: string): ISkill;
 }

@@ -5,15 +5,13 @@
 		"module": "commonjs",
 		"target": "es6",
 		"resolveJsonModule": true,
-		"noImplicityAny": true,
+		"noImplicitAny": true,
 		"moduleResolution": "node",
-		"strict": true,
-		"declaration": true,
-		"inlineSources": true,
+		"esModuleInterop": true
 	},
 	"exclude": [
 		"node_modules",
 		"**/*test.js"
 	],
-	"include": ["src/**/*"],
+	"include": ["src/**/*"]
 }
