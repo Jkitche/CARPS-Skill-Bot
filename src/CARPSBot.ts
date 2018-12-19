@@ -25,36 +25,10 @@ export default class CARPSSkillBot {
 		this.logger = logger;
 	}
 
-	public onReady = (): void => {
-		this.logger.info(`[${this.config.botName}] Connected.`);
-		this.logger.info(`Logged in as ${this.client.user.tag}`);
-		this.client.user.setActivity(this.config.activity);
-	}
-
-	public onMessage = (message: Message): void => {
-		const commandRegex = /\/skill\s+(.+)/g;
-		const matches = commandRegex.exec(message.content);
-		if (matches) {
-			const skill = this.skillRepository.getSkillByName(matches[1]);
-			const embed = this.embedGenerator.getSkillEmbed(skill);
-			message.channel.send("ISkill Info", { embed });
-		}
-	}
-
-	public onExit = () => {
-		this.logger.info(`[${this.config.botName}] Process exit.`);
-		this.client.destroy();
-	}
-
-	public processOnUncaughtException = (err: Error) => {
-		const errorMsg = err ? err.stack || err : "";
-		this.logger.error(errorMsg.toString());
-	}
-
-	public processOnUnhandledRejection = (err: Error) => {
-		this.logger.error("Uncaught Promise error: \n" + err.stack);
-	}
-
+	/**
+	 * Starts the bot.
+	 * @return {void}
+	 */
 	public start(): void {
 		this.logger.info("Starting bot...");
 
@@ -68,5 +42,53 @@ export default class CARPSSkillBot {
 		process.on("exit", this.onExit);
 		process.on("uncaughtException", this.processOnUncaughtException);
 		process.on("unhandledRejection", this.processOnUnhandledRejection);
+	}
+
+	/**
+	 * Callback for when the bot is ready.
+	 */
+	private onReady = (): void => {
+		this.logger.info(`[${this.config.botName}] Connected.`);
+		this.logger.info(`Logged in as ${this.client.user.tag}`);
+		this.client.user.setActivity(this.config.activity);
+	}
+
+	/**
+	 * Callback for when a new message comes in.
+	 * @param {Message} message Discord message from the API.
+	 */
+	private onMessage = (message: Message): void => {
+		const commandRegex = /\/skill\s+(.+)/g;
+		const matches = commandRegex.exec(message.content);
+		if (matches) {
+			const skill = this.skillRepository.getSkillByName(matches[1]);
+			const embed = this.embedGenerator.getSkillEmbed(skill);
+			message.channel.send("ISkill Info", { embed });
+		}
+	}
+
+	/**
+	 * Callback for when the bot process ends.
+	 */
+	private onExit = () => {
+		this.logger.info(`[${this.config.botName}] Process exit.`);
+		this.client.destroy();
+	}
+
+	/**
+	 * Uncaught Exception handler.
+	 * @param {Error} err
+	 */
+	private processOnUncaughtException = (err: Error) => {
+		const errorMsg = err ? err.stack || err : "";
+		this.logger.error(errorMsg.toString());
+	}
+
+	/**
+	 * Unhandled Promise Rejection handler.
+	 * @param {Error} err
+	 */
+	private processOnUnhandledRejection = (err: Error) => {
+		this.logger.error("Uncaught Promise error: \n" + err.stack);
 	}
 }
