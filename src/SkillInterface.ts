@@ -1,25 +1,7 @@
-export interface SkillLevel {
-	level: "Basic" | "Expert" | "Master" | "Grand Master"
-}
-
-export interface SkillType {
-	type: "Skill" | "One Shot";
-}
-
-export interface SkillRequirement {
-	skillName: string;
-	level: SkillLevel;
-}
-
-export interface Element {
-	name: string;
-}
-
-export interface OneShot {
-	name: string;
-	level: SkillLevel;
-	description: string;
-}
+import SkillLevel from "./types/SkillLevel";
+import SkillType from "./types/SkillType";
+import SkillRequirement from "./types/SkillRequirement";
+import OneShot from "./types/OneShot";
 
 export default interface Skill {
 	name: string;

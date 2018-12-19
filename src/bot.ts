@@ -1,52 +1,59 @@
 import { Client, Message } from 'discord.js';
-import * as debug from 'debug';
 import * as config from '../config.json';
-import getSkillEmbedBySkillName from './SkillLookup';
-import getSkillEmbed from './EmbedGenerator';
-
-const logSystem = debug('bot:system');
-const logEvent = debug('bot:event');
-const logError = debug('bot:error');
-const logWarn = debug('bot:warn');
+import IEmbedGenerator from './interfaces/IEmbedGenerator.js';
+import ISkillRepository from './interfaces/ISkillRepository.js';
 
 export default class CARPSSkillBot {
 	private client: Client;
 	private config: any;
+	private embedGenerator: IEmbedGenerator;
+	private skillRepository: ISkillRepository;
 
-	constructor() {
+	constructor(embedGenerator: IEmbedGenerator, skillRepository: ISkillRepository) {
 		this.client = new Client();
 		this.config = config;
+		this.embedGenerator = embedGenerator;
+		this.skillRepository = skillRepository;
+	}
+
+	private onReady(): void {
+		console.log(`[${ this.config.settings.nameBot }] Connected.`);
+		console.log(`Logged in as ${ this.client.user.tag }`);
+		this.client.user.setActivity(this.config.settings.activity);
+	}
+
+	private onMessage = (message: Message): void => {
+		const skill = this.skillRepository.getSkillByName(message.content);
+		const embed = this.embedGenerator.getSkillEmbed(skill);
+		message.channel.send('Skill Info', { embed });
+	}
+
+	private onExit = () => {
+		console.log(`[${ this.config.settings.nameBot }] Process exit.`);
+		this.client.destroy();
+	}
+	
+	private processOnUncaughtException = (err: Error) => {
+		const errorMsg = err ? err.stack || err : '';
+		console.log(errorMsg)
+	}
+
+	private processOnUnhandledRejection = (err: Error) => {
+		console.log('Uncaught Promise error: \n' + err.stack);
 	}
 
 	public start(): void {
-		logSystem('Starting bot...');
+		console.log('Starting bot...');
 
-		this.client.on('error', logError);
-		this.client.on('warn', logWarn);
-		this.client.on('ready', () => {
-			logEvent(`[${ this.config.settings.nameBot }] Connected.`);
-			logEvent(`Logged in as ${ this.client.user.tag }`);
-			this.client.user.setActivity(this.config.settings.activity);
-		})
-
-		this.client.on('message', (message: Message) => {
-			const skill = getSkillEmbedBySkillName(message.content);
-			const embed = getSkillEmbed(skill);
-			message.channel.send('Skill Info', { embed });
-		});
+		this.client.on('error', console.error);
+		this.client.on('warn', console.warn);
+		this.client.on('ready', this.onReady);
+		this.client.on('message', this.onMessage);
 
 		this.client.login(this.config.settings.token);
 
-		process.on('exit', () => {
-			logEvent(`[${ this.config.settings.nameBot }] Process exit.`);
-			this.client.destroy();
-		})
-		process.on('uncaughtException', (err: Error) => {
-			const errorMsg = err ? err.stack || err : '';
-			logError(errorMsg)
-		})
-		process.on('unhandledRejection', (err: Error) => {
-			logError('Uncaught Promise error: \n' + err.stack);
-		})
+		process.on('exit', this.onExit);
+		process.on('uncaughtException', this.processOnUncaughtException);
+		process.on('unhandledRejection', this.processOnUnhandledRejection);
 	}
 }

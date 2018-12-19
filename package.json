@@ -7,9 +7,7 @@
 		"build": "./node_modules/webpack/bin/webpack.js"
 	},
 	"dependencies": {
-		"@types/debug": "^0.0.31",
 		"@types/node": "^10.12.17",
-		"debug": "^4.1.0",
 		"discord.js": "^11.4.2"
 	},
 	"devDependencies": {

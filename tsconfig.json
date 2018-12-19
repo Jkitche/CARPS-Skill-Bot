@@ -2,10 +2,14 @@
 	"compilerOptions": {
 		"outDir": "./dist/",
 		"sourceMap": true,
-		"noImplicitAny": true,
 		"module": "commonjs",
 		"target": "es6",
-		"resolveJsonModule": true
+		"resolveJsonModule": true,
+		"noImplicityAny": true,
+		"moduleResolution": "node",
+		"strict": true,
+		"declaration": true,
+		"inlineSources": true,
 	},
 	"exclude": [
 		"node_modules",
