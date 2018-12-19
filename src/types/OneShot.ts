@@ -1,4 +1,4 @@
-import SkillLevel from "./SkillLevel";
+import { SkillLevel } from "../SkillInterface";
 
 export default interface OneShot {
 	name: string;

@@ -1,7 +1,8 @@
-import SkillLevel from "./types/SkillLevel";
-import SkillType from "./types/SkillType";
 import SkillRequirement from "./types/SkillRequirement";
-import OneShot from "./types/OneShot";
+
+export type SkillLevel = "Basic" | "Expert" | "Master" | "Grand Master";
+export type SkillType = "Skill" | "One Shot";
+export type Element = "Air" | "Fire" | "Water" | "Earth";
 
 export default interface Skill {
 	name: string;
@@ -10,5 +11,4 @@ export default interface Skill {
 	type: SkillType;
 	description: string;
 	requirements: Array<SkillRequirement>;
-	oneshots: Array<OneShot>;
 }

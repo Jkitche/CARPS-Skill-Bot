@@ -1,44 +1,48 @@
 import { Client, Message } from 'discord.js';
-import * as config from '../config.json';
 import IEmbedGenerator from './interfaces/IEmbedGenerator.js';
 import ISkillRepository from './interfaces/ISkillRepository.js';
+import Config from './types/Config.js';
 
 export default class CARPSSkillBot {
 	private client: Client;
-	private config: any;
+	private config: Config;
 	private embedGenerator: IEmbedGenerator;
 	private skillRepository: ISkillRepository;
 
-	constructor(embedGenerator: IEmbedGenerator, skillRepository: ISkillRepository) {
-		this.client = new Client();
+	constructor(config: Config, client: Client, embedGenerator: IEmbedGenerator, skillRepository: ISkillRepository) {
 		this.config = config;
+		this.client = client;
 		this.embedGenerator = embedGenerator;
 		this.skillRepository = skillRepository;
 	}
 
-	private onReady(): void {
-		console.log(`[${ this.config.settings.nameBot }] Connected.`);
-		console.log(`Logged in as ${ this.client.user.tag }`);
-		this.client.user.setActivity(this.config.settings.activity);
+	onReady = (): void => {
+		console.log(`[${this.config.botName}] Connected.`);
+		console.log(`Logged in as ${this.client.user.tag}`);
+		this.client.user.setActivity(this.config.activity);
 	}
 
-	private onMessage = (message: Message): void => {
-		const skill = this.skillRepository.getSkillByName(message.content);
-		const embed = this.embedGenerator.getSkillEmbed(skill);
-		message.channel.send('Skill Info', { embed });
+	onMessage = (message: Message): void => {
+		const commandRegex = /\/skill\s+(.+)/g;
+		const matches = commandRegex.exec(message.content);
+		if (matches) {
+			const skill = this.skillRepository.getSkillByName(matches[1]);
+			const embed = this.embedGenerator.getSkillEmbed(skill);
+			message.channel.send('Skill Info', { embed });
+		}
 	}
 
-	private onExit = () => {
-		console.log(`[${ this.config.settings.nameBot }] Process exit.`);
+	onExit = () => {
+		console.log(`[${this.config.botName}] Process exit.`);
 		this.client.destroy();
 	}
 	
-	private processOnUncaughtException = (err: Error) => {
+	processOnUncaughtException = (err: Error) => {
 		const errorMsg = err ? err.stack || err : '';
 		console.log(errorMsg)
 	}
 
-	private processOnUnhandledRejection = (err: Error) => {
+	processOnUnhandledRejection = (err: Error) => {
 		console.log('Uncaught Promise error: \n' + err.stack);
 	}
 
@@ -50,7 +54,7 @@ export default class CARPSSkillBot {
 		this.client.on('ready', this.onReady);
 		this.client.on('message', this.onMessage);
 
-		this.client.login(this.config.settings.token);
+		this.client.login(this.config.token);
 
 		process.on('exit', this.onExit);
 		process.on('uncaughtException', this.processOnUncaughtException);

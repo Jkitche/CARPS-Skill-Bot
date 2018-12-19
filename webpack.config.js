@@ -7,6 +7,7 @@ module.exports = {
 		filename: 'carpsbot.js',
 		path: path.resolve(__dirname, "dist"),
 	},
+	target: "node",
 	devtool: 'source-map',
 	resolve: {
 		extensions: ['.ts', '.js', '.json'],
@@ -16,5 +17,4 @@ module.exports = {
 			{ test: /\.ts?$/, loader: 'awesome-typescript-loader' },
 		],
 	},
-	externals: ["fs"]
 };

@@ -1,12 +1,12 @@
-	[
-		{
-			"name": "Aqua Mortis",
-			"elements": ["Air"],
-			"level": "Basic",
-			"type": "Skill",
-			"description": "Each level of this skill provides 5PP which can be used to craft Alchemical Poisons. Poisons have three classifications: acids, toxins and venoms. These items are designed to deceive, injure and negatively-alter living creatures. All Poisons at the base level are ingested liquids and must be drunk to take effect. If placed in another liquid that liquid will now hold the effects of the Poisons for the first person to drink the liquid (if multiple doses are placed in the same liquid then one drink uses up one dose). To create an Alchemical Poison the following must ALL be true: \n1. You must have a copy of the recipe for the Poison you wish to create; \n2. You must have a container to hold the Poison (vial for liquid/paste or gas globe (Packet) for diffused/dispersed); \n3. Your Aqua Mortis skill must be equal to or higher than the level of the recipe you are crafting; \n4. If the recipe is level 10 expendable or higher it requires the expenditure of one Rare material; and \n5. A Production Marshal must witness the crafting of the Poison and initial your temp tag. \n\nAll those who study Aqua Mortis have the ability to identify Alchemical Poisons by spending 100 seconds examining it. After this time is done they may look at the tag and if it is an Alchemical Poison (not a Potion) they are able to tell what it is. ",
-			"requirements": []
-		},
+[
+	{
+		"name": "Aqua Mortis",
+		"elements": ["Air"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill provides 5PP which can be used to craft Alchemical Poisons. Poisons have three classifications: acids, toxins and venoms. These items are designed to deceive, injure and negatively-alter living creatures. All Poisons at the base level are ingested liquids and must be drunk to take effect. If placed in another liquid that liquid will now hold the effects of the Poisons for the first person to drink the liquid (if multiple doses are placed in the same liquid then one drink uses up one dose). To create an Alchemical Poison the following must ALL be true: \n1. You must have a copy of the recipe for the Poison you wish to create; \n2. You must have a container to hold the Poison (vial for liquid/paste or gas globe (Packet) for diffused/dispersed); \n3. Your Aqua Mortis skill must be equal to or higher than the level of the recipe you are crafting; \n4. If the recipe is level 10 expendable or higher it requires the expenditure of one Rare material; and \n5. A Production Marshal must witness the crafting of the Poison and initial your temp tag. \n\nAll those who study Aqua Mortis have the ability to identify Alchemical Poisons by spending 100 seconds examining it. After this time is done they may look at the tag and if it is an Alchemical Poison (not a Potion) they are able to tell what it is. ",
+		"requirements": []
+	},
 	{
 		"name": "Bard Song",
 		"elements": ["Air"],
@@ -77,14 +77,7 @@
 		"level": "Master",
 		"type": "Skill",
 		"description": "Once/level you may strike your target from behind with an Eviscerate. This skill is only usable with a 1-handed weapon.",
-		"requirements": [{ "name": "Backstab", "level": "Master" }],
-		"oneshots": [
-			{
-				"name": "Counterblow Ambush",
-				"level": "Grand Master",
-				"description": "You have developed your Ambush skill to the point where you are able to Ambush someone when they attack you. In order to initiate a Counterblow Ambush you must be dealt a damaging melee attack and not reduce it in any way, or resist it. Upon doing so you may expend a use of your Ambush skill and call, “Counterblow Eviscerate.” Your next attack against that target is an Eviscerate. In the case of a counterblow you are not required to strike your opponent in the back."
-			}
-		]
+		"requirements": [{ "name": "Backstab", "level": "Master" }]
 	},
 	{
 		"name": "Assassinate",
@@ -212,10 +205,7 @@
 		"description": "Once/level you may Disarm your opponent by hitting one of their weapons with yours and calling, 'Disarm'",
 		"requirements": [
 			{ "name": "Weapon Damage", "level": "Grand Master" },
-			[
-				{ "name": "Speed of Blade", "level": "Master" },
-				{ "name": "Vorpal", "level": "Master" }
-			]
+			{ "name": "Speed of Blade OR Vorpal", "level": "Master"}
 		]
 	},
 	{

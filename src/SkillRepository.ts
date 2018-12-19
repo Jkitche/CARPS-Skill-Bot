@@ -10,7 +10,13 @@ export default class SkillRepository implements ISkillRepository {
 	 * @returns {Skill}
 	 */
 	public getSkillByName(skillName: string): Skill {
-		const skillList: Skill[] = JSON.parse(skills.toString());
-		return skillList.filter((skill: Skill) => skill.name === skillName)[0];
+		const skillList: Array<Skill> = skills as Array<Skill>;
+		const matchedSkills: Array<Skill> = skillList.filter(
+			(skill: Skill) => {
+				const contains = skill.name.toLowerCase().includes(skillName.toLowerCase());
+				return contains;
+			}
+		);
+		return matchedSkills[0];
 	}
 }

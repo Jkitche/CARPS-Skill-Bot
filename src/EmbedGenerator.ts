@@ -38,7 +38,7 @@ export default class EmbedGenerator implements IEmbedGenerator {
 	 */
 	private getSkillRequirements(skill: Skill): Array<string> {
 		return skill.requirements.map((requirement: SkillRequirement) => {
-			return `${requirement.level} ${requirement.level}`;
+			return `${requirement.level} ${requirement.name}`;
 		});
 	}
 

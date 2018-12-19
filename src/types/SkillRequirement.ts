@@ -1,6 +1,6 @@
-import SkillLevel from "./SkillLevel";
+import { SkillLevel } from "../SkillInterface";
 
 export default interface SkillRequirement {
-	skillName: string;
+	name: string;
 	level: SkillLevel;
 }

@@ -1,6 +1,5 @@
-import Skill from "./SkillInterface";
 
-declare module '*skills.json' {
-	export const skillList: Array<Skill>;
+declare module "*.json" {
+	const value: any;
+	export default value;
 }
-
