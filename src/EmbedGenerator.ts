@@ -1,9 +1,18 @@
+import { Logger } from "winston";
 import IEmbedGenerator from "./interfaces/IEmbedGenerator";
 import ISkill from "./SkillInterface";
 import ISkillEmbed from "./types/ISkillEmbed";
 import ISkillRequirement from "./types/ISkillRequirement";
 
 export default class EmbedGenerator implements IEmbedGenerator {
+	private logger: Logger;
+
+	/**
+	 * @param {Logger} logger
+	 */
+	constructor(logger: Logger) {
+		this.logger = logger;
+	}
 
 	/**
 	 * @param {ISkill} skill
@@ -25,7 +34,7 @@ export default class EmbedGenerator implements IEmbedGenerator {
 				url: "http://carpsgame.com/images/icon_webheader.png",
 			},
 			author: {
-				name: "CARPS ISkill Bot",
+				name: "CARPS Skill Bot",
 				url: "https://discordapp.com",
 				icon_url: "http://carpsgame.com/images/icon_webheader.png",
 			},
@@ -48,6 +57,7 @@ export default class EmbedGenerator implements IEmbedGenerator {
 	 */
 	private getSkillDescription(skill: ISkill): string {
 		const requirements = this.getSkillRequirements(skill);
+		this.logger.info(JSON.stringify(requirements));
 
 		const skillDescription = skill.description.length
 			? skill.description

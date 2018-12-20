@@ -33,7 +33,6 @@ export default class CARPSSkillBot {
 		this.logger.info("Starting bot...");
 
 		this.client.on("error", this.logger.error);
-		this.client.on("warn", this.logger.warn);
 		this.client.on("ready", this.onReady);
 		this.client.on("message", this.onMessage);
 
@@ -63,7 +62,7 @@ export default class CARPSSkillBot {
 		if (matches) {
 			const skill = this.skillRepository.getSkillByName(matches[1]);
 			const embed = this.embedGenerator.getSkillEmbed(skill);
-			message.channel.send("ISkill Info", { embed });
+			message.channel.send("", { embed });
 		}
 	}
 

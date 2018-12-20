@@ -26,7 +26,9 @@ if (process.env.NODE_ENV !== "production") {
 const bot: CARPSSkillBot = new CARPSSkillBot(
 	config,
 	new Client(),
-	new EmbedGenerator(),
+	new EmbedGenerator(
+		logger,
+	),
 	new SkillRepository(
 		logger,
 	),
