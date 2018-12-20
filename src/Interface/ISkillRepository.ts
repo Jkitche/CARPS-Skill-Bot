@@ -1,4 +1,4 @@
-import ISkill from "../SkillInterface";
+import ISkill from "./ISkill";
 
 export default interface ISkillRepository {
 

@@ -1,10 +1,10 @@
 import { Client } from "discord.js";
 import winston, { Logger } from "winston";
 import * as jsonConfig from "../config.json";
-import CARPSSkillBot from "./CARPSBot";
-import EmbedGenerator from "./EmbedGenerator";
-import SkillRepository from "./SkillRepository";
-import IConfig from "./types/IConfig";
+import CARPSSkillBot from "./Application/CARPSBot";
+import EmbedGenerator from "./Domain/EmbedGenerator";
+import SkillRepository from "./Domain/SkillRepository";
+import IConfig from "./Interface/IConfig";
 
 const config: IConfig = jsonConfig as IConfig;
 

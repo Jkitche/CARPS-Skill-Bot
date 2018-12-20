@@ -1,7 +1,7 @@
 import { Logger } from "winston";
-import ISkillRepository from "./interfaces/ISkillRepository";
-import ISkill from "./SkillInterface";
-import skills from "./skills.json";
+import ISkill from "../Interface/ISkill";
+import ISkillRepository from "../Interface/ISkillRepository";
+import skills from "../skills.json";
 
 export default class SkillRepository implements ISkillRepository {
 	private logger: Logger;

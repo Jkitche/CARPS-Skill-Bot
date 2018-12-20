@@ -1,4 +1,4 @@
-import ISkillRequirement from "./types/ISkillRequirement";
+import ISkillRequirement from "./ISkillRequirement";
 
 export type SkillLevel = "Basic" | "Expert" | "Master" | "Grand Master";
 export type SkillType = "Skill" | "One Shot";

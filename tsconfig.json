@@ -7,8 +7,7 @@
 		"resolveJsonModule": true,
 		"noImplicitAny": true,
 		"moduleResolution": "node",
-		"esModuleInterop": true,
-		"allowNonTsExtensions": true
+		"esModuleInterop": true
 	},
 	"exclude": [
 		"node_modules",

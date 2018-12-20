@@ -1,8 +1,8 @@
 import { Client, Message } from "discord.js";
 import { Logger } from "winston";
-import IEmbedGenerator from "./interfaces/IEmbedGenerator.js";
-import ISkillRepository from "./interfaces/ISkillRepository.js";
-import IConfig from "./types/IConfig.js";
+import IConfig from "../Interface/IConfig.js";
+import IEmbedGenerator from "../Interface/IEmbedGenerator.js";
+import ISkillRepository from "../Interface/ISkillRepository.js";
 
 export default class CARPSSkillBot {
 	private client: Client;
@@ -61,7 +61,7 @@ export default class CARPSSkillBot {
 		const matches = commandRegex.exec(message.content);
 		if (matches) {
 			const skill = this.skillRepository.getSkillByName(matches[1]);
-			const embed = this.embedGenerator.getSkillEmbed(skill);
+			const embed = this.embedGenerator.getSkillEmbed(skill, new Date());
 			message.channel.send("", { embed });
 		}
 	}

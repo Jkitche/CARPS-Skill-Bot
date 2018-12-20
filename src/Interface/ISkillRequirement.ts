@@ -1,4 +1,4 @@
-import { SkillLevel } from "../SkillInterface";
+import { SkillLevel } from "./ISkill";
 
 export default interface ISkillRequirement {
 	name: string;

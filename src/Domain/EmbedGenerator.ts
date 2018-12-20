@@ -1,8 +1,8 @@
 import { Logger } from "winston";
-import IEmbedGenerator from "./interfaces/IEmbedGenerator";
-import ISkill from "./SkillInterface";
-import ISkillEmbed from "./types/ISkillEmbed";
-import ISkillRequirement from "./types/ISkillRequirement";
+import IEmbedGenerator from "../Interface/IEmbedGenerator";
+import ISkill from "../Interface/ISkill";
+import ISkillEmbed from "../Interface/ISkillEmbed";
+import ISkillRequirement from "../Interface/ISkillRequirement";
 
 export default class EmbedGenerator implements IEmbedGenerator {
 	private logger: Logger;
@@ -16,16 +16,17 @@ export default class EmbedGenerator implements IEmbedGenerator {
 
 	/**
 	 * @param {ISkill} skill
+	 * @param {Date} timestamp
 	 * @returns {ISkillEmbed}
 	 */
-	public getSkillEmbed(skill: ISkill): ISkillEmbed {
+	public getSkillEmbed(skill: ISkill, timestamp: Date): ISkillEmbed {
 		const description = this.getSkillDescription(skill);
 
 		return {
 			title: skill.name,
 			description,
 			url: "http://carpsgame.com/printable%20forms/CARPS%20V6.4%20Final.pdf",
-			timestamp: new Date(),
+			timestamp,
 			footer: {
 				icon_url: "http://carpsgame.com/images/icon_webheader.png",
 				text: "CARPS v6.4",
