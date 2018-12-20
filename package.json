@@ -6,20 +6,22 @@
 	"scripts": {
 		"start": "./node_modules/webpack/bin/webpack.js --watch",
 		"build": "./node_modules/webpack/bin/webpack.js",
-		"test": "jest",
+		"test:coverage": "jest --coverage",
+		"test:badges": "npm run test:coverage && jest-coverage-badges",
 		"docker-debug": "docker-compose up",
 		"start:prod": "NODE_ENV=production; node ./dist/carpsbot.js"
 	},
 	"dependencies": {
-		"@types/node": "^10.12.17",
 		"discord.js": "^11.4.2",
-		"friendly-errors-webpack-plugin": "^1.7.0",
 		"winston": "^3.1.0"
 	},
 	"devDependencies": {
 		"@types/jest": "^23.3.10",
+		"@types/node": "^10.12.17",
 		"awesome-typescript-loader": "^5.2.1",
+		"friendly-errors-webpack-plugin": "^1.7.0",
 		"jest": "^23.6.0",
+		"jest-coverage-badges": "^1.0.0",
 		"ts-jest": "^23.10.5",
 		"tslint": "^5.11.0",
 		"tslint-config-airbnb": "^5.11.0",
@@ -28,3 +30,4 @@
 		"webpack-cli": "^3.1.2"
 	}
 }
+C

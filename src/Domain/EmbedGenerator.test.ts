@@ -46,7 +46,7 @@ describe("EmbedGenerator", () => {
 			},
 		};
 
-		const actualEmbed: ISkillEmbed = this.generator.getSkillEmbed(skill);
+		const actualEmbed: ISkillEmbed = this.generator.getSkillEmbed(skill, timestamp);
 
 		expect(expectedEmbed).toEqual(actualEmbed);
 	});

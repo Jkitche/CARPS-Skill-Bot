@@ -1,19 +1,13 @@
 import { Logger } from "winston";
-<<<<<<< Updated upstream:src/Domain/SkillRepository.ts
 import ISkill from "../Interface/ISkill";
 import ISkillRepository from "../Interface/ISkillRepository";
-import skills from "../skills.json";
-=======
-import ISkillRepository from "./interfaces/ISkillRepository";
-import ISkill from "./types/SkillInterface";
 import skills from "./skills.json";
->>>>>>> Stashed changes:src/SkillRepository.ts
 
 export default class SkillRepository implements ISkillRepository {
-	private logger: Logger;
+	private skillList: ISkill[];
 
-	constructor(logger: Logger) {
-		this.logger = logger;
+	constructor() {
+		this.skillList = skills as ISkill[];
 	}
 
 	/**
@@ -21,8 +15,7 @@ export default class SkillRepository implements ISkillRepository {
 	 * @returns {ISkill}
 	 */
 	public getSkillByName(skillName: string): ISkill {
-		const skillList: ISkill[] = skills as ISkill[];
-		const matchedSkills: ISkill[] = skillList.filter((skill: ISkill) => {
+		const matchedSkills: ISkill[] = this.skillList.filter((skill: ISkill) => {
 			return skill.name.toLowerCase().includes(skillName.toLowerCase());
 		});
 		return matchedSkills[0];
