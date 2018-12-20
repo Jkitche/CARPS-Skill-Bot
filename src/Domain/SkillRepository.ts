@@ -1,7 +1,13 @@
 import { Logger } from "winston";
+<<<<<<< Updated upstream:src/Domain/SkillRepository.ts
 import ISkill from "../Interface/ISkill";
 import ISkillRepository from "../Interface/ISkillRepository";
 import skills from "../skills.json";
+=======
+import ISkillRepository from "./interfaces/ISkillRepository";
+import ISkill from "./types/SkillInterface";
+import skills from "./skills.json";
+>>>>>>> Stashed changes:src/SkillRepository.ts
 
 export default class SkillRepository implements ISkillRepository {
 	private logger: Logger;

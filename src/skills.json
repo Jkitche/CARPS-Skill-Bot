@@ -563,7 +563,9 @@
 		"level": "Basic",
 		"type": "Skill",
 		"description": "",
-		"requirements": []
+		"requirements": [
+			{ "name": "Read Magic", "level":  "" }
+		]
 	},
 	{
 		"name": "Augury",

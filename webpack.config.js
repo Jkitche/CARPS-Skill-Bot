@@ -22,7 +22,7 @@ module.exports = {
 					'Some additionnal notes to be displayed unpon successful compilation',
 				],
 			},
-			onErrors: function(severity, errors) {
+			onErrors: function (severity, errors) {
 				// You can listen to errors transformed and prioritized by the plugin
 				// severity can be 'error' or 'warning'
 			},
@@ -35,6 +35,6 @@ module.exports = {
 		extensions: ['.ts', '.js', '.json'],
 	},
 	module: {
-		rules: [{ test: /\.ts?$/, loader: 'awesome-typescript-loader' }],
+		rules: [{test: /\.ts?$/, loader: 'awesome-typescript-loader'}],
 	},
 };
