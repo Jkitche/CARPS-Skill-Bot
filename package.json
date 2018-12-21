@@ -1,12 +1,12 @@
 {
-	"name": "CARPS-Skill-Discord-Bot",
+	"name": "carps-skill-discord-bot",
 	"version": "1.0.0",
 	"main": "./src/index.js",
 	"license": "MIT",
 	"scripts": {
 		"start": "./node_modules/webpack/bin/webpack.js --watch",
 		"build": "./node_modules/webpack/bin/webpack.js",
-		"test:coverage": "jest --coverage",
+		"test": "jest --coverage",
 		"docker-debug": "docker-compose up",
 		"start:prod": "NODE_ENV=production; node ./dist/carpsbot.js"
 	},
