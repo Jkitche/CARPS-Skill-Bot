@@ -5,6 +5,9 @@ import ISkillEmbed from "../Interface/ISkillEmbed";
 import ISkillRequirement from "../Interface/ISkillRequirement";
 
 export default class EmbedGenerator implements IEmbedGenerator {
+	private MAX_EMBED_LENGTH = 1024;
+	private TRUNCATED_MESSAGE = "\n\nDescription truncated. Please See Rulebook for full Description.";
+
 	private logger: Logger;
 
 	/**
@@ -22,10 +25,16 @@ export default class EmbedGenerator implements IEmbedGenerator {
 	public getSkillEmbed(skill: ISkill, timestamp: Date): ISkillEmbed {
 		const description = this.getSkillDescription(skill);
 
+		this.logger.info(`Getting skill embed for skill '${skill.name}'`);
+
+		const requirements = this.getSkillRequirements(skill);
+		const skillRequirements = requirements.length ? requirements.join(", ") : "None";
+
 		return {
 			title: skill.name,
-			description,
-			url: "http://carpsgame.com/printable%20forms/CARPS%20V6.4%20Final.pdf",
+			description: "",
+			url:
+				"http://carpsgame.com/printable%20forms/CARPS%20V6.4%20Final.pdf",
 			timestamp,
 			footer: {
 				icon_url: "http://carpsgame.com/images/icon_webheader.png",
@@ -39,6 +48,24 @@ export default class EmbedGenerator implements IEmbedGenerator {
 				url: "https://discordapp.com",
 				icon_url: "http://carpsgame.com/images/icon_webheader.png",
 			},
+			fields: [
+				{
+					name: "Element(s):",
+					value: skill.elements.join(", "),
+				},
+				{
+					name: "Level:",
+					value: skill.level,
+				},
+				{
+					name: "Requirements:",
+					value: skillRequirements,
+				},
+				{
+					name: "Description:",
+					value: description,
+				},
+			],
 		};
 	}
 
@@ -53,26 +80,24 @@ export default class EmbedGenerator implements IEmbedGenerator {
 	}
 
 	/**
+	 * @param {string} description
+	 * @returns {string}
+	 */
+	private trimDescription = (description: string): string => {
+		if (description.length >= this.MAX_EMBED_LENGTH) {
+			return `${description.substring(0, this.MAX_EMBED_LENGTH - this.TRUNCATED_MESSAGE.length - 5)}... ${this.TRUNCATED_MESSAGE}`;
+		}
+		return description;
+	}
+
+	/**
 	 * @param {ISkill} skill
 	 * @returns {string}
 	 */
 	private getSkillDescription(skill: ISkill): string {
-		const requirements = this.getSkillRequirements(skill);
-		this.logger.info(JSON.stringify(requirements));
-
 		const skillDescription = skill.description.length
-			? skill.description
+			? this.trimDescription(skill.description)
 			: "Coming Soon...";
-
-		const skillRequirements = requirements.length
-			? requirements
-			: "None";
-
-		return [
-			"**Element(s):** " + skill.elements.join(", "),
-			"**Level:** " + skill.level,
-			"**Requirements:** " + skillRequirements,
-			"**Description:** " + skillDescription,
-		].join("\n");
+		return skillDescription;
 	}
 }

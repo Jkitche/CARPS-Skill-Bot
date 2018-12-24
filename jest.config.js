@@ -5,4 +5,5 @@ module.exports = {
 		"^.+\\.tsx?$": "ts-jest",
 	},
 	coverageReporters: ["json-summary", "text", "lcov"],
+	testEnvironment: "node",
 };

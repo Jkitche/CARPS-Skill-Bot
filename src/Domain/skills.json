@@ -1,5 +1,53 @@
 [
 	{
+		"name": "Air Magic",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "This skill allows you to cast Air spells up to your level of the Air Magic skill.  It also grants you one use/level of Air Magic. You may expend a use of Air Magic to throw bursts of wind for a combat.  These bursts deal 'Air' damage equal to 2x your level of this skill.",
+		"requirements": [{ "name": "Read Magic", "level": "" }]
+	},
+	{
+		"name": "Alchemy",
+		"elements": ["Earth"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill provides 5PP which can be used to craft Alchemical Potions. These items are designed to enhance, protect and positively alter living creatures. All alchemies at the base level are ingested liquids and must be drunk to take effect. If placed in another liquid that liquid will now hold the effects of the Alchemy for the first person to drink the liquid (if multiple doses are placed in the same liquid then one drink uses up one dose).\n\nTo create an Alchemical Potion the following must ALL be true: \n 1. You must have a copy of the recipe for the Potion you wish to create; \n  2. You must have a container to hold the Potion (vial for liquid/paste or gas globe (Packet) for diffused/dispersed); \n  3. Your Alchemy skill must be equal to or higher than the level of the recipe you are crafting; \n  4. If the recipe is level 10 expendable or higher it requires the expenditure of one Rare material; \n  5. A Production Marshal must witness the crafting of the Potion and initial your temporary (temp) tag; and \n  6. All Potion effects last until re-pop or used, unless the recipe specifically states otherwise. \n\nAll alchemists also have the ability to identify Alchemical Potions by spending 100 seconds examining it. After this time is done they may look at the tag and if it is an alchemical Potion (not a Poison) they are able to tell what it is.",
+		"requirements": []
+	},
+	{
+		"name": "All Weapons",
+		"elements": ["Fire"],
+		"level": "Basic",
+		"type": "One Shot",
+		"description": "This one-shot provides the knowledge to use any regular or artist weapon.",
+		"requirements": []
+	},
+	{
+		"name": "Ambush",
+		"elements": ["Air"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may strike your target from behind with an Eviscerate. This skill is only usable with a 1-handed weapon.",
+		"requirements": [{ "name": "Backstab", "level": "Master" }]
+	},
+	{
+		"name": "Animal Ken",
+		"elements": ["Earth"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may deliver a Packet - based Charm Pacify on an animal by striking it with a Packet and calling, “Animal Ken – Pacify.”  This skill lasts for the duration of the scene.  Animals are defined as any creature with the following monster manual classifications: Animal, Dire Animal, Insect, and Spider.",
+		"requirements": []
+	},
+	{
+		"name": "Animalism",
+		"elements": ["Earth"],
+		"level": "Grand Master",
+		"type": "Skill",
+		"description": "Due to the diverse nature of this skill and the variety of abilities that animals have each animalist will be slightly different but must follow the below guidelines. Note: This is a role-playing intensive skill and should not be taken lightly. It is not considered a power house skill, but does allow the player to do some things which are not available in another fashion and gives some creative customization.\n• At level 1 of this skill you must choose a patron animal. This patron animal will be used to define how this skill will function going forward for you.\n• At each level you choose a singular trait of your patron animal and you must designate a specific phys rep or costume change that is conjunctive with this trait. For example, if you took lion as your patron animal and wanted to take a trait of claws you would need to have appropriate phys rep lion claws in conjunction with this, instead of the standard claw phys reps used by NPCs.\n• All traits must be approved by the GM and should be as specific as possible. For example, enhanced senses would not be allowed, but enhanced vision or enhanced smell would be acceptable.\n• Some traits may be deemed a higher tier than your current level of the skill reflects.  If your patron is a hawk and you want winged flight as your level 1 trait, it would probably be deemed too powerful for your current level of the skill as something like that should be a Master or higher level skill.\n• As a general rule, if you are duplicating a skill, spell, or ability that can be done by another rule in the game then you should need to have a HIGHER named level than that skill and skills with multiple pre-reqs should be harder to duplicate. The skill should also be slightly weaker in its implementation. So if you want the animal trait Pounce with a lion patron and would like this to be reflected as the ability to deal a backstab attack, since Backstab is an Expert-level skill you would need to be a Master. Another example would be if you want the animal trait Resilient from a bear patron and wish to gain more Life Points, it should not grant you the same Life Point advantage that the Toughness skill grants.\n• If an animal trait replicates an ability that has limited uses, the GM will determine how often you may use the ability. Unless specifically told otherwise, you gain a single use of the ability for the Re-Pop. You do NOT gain a single use for each level of the skill.",
+		"requirements": [{ "name": "Animal Ken", "level": "Grand Master" }]
+	},
+	{
 		"name": "Aqua Mortis",
 		"elements": ["Air"],
 		"level": "Basic",
@@ -8,59 +56,19 @@
 		"requirements": []
 	},
 	{
-		"name": "Bard Song",
+		"name": "Assassinate",
 		"elements": ["Air"],
-		"level": "Basic",
+		"level": "Grand Master",
 		"type": "Skill",
-		"description": "This skill may be used once/level/re-pop and requires that the bard perform for at least 30 seconds/level of the Song. All bards must maintain a songbook that contains the description of the performance’s effects. Songs can be taught by any Bard that possesses them to any bard of sufficient level. In order to teach a song the Bard doing the teaching must expend a use of the skill and perform the song (cannot Quick Song when teaching) after which a Temp Tag may be filled out for the learning Bard to add the song to their Song Book (the temp tag must be signed by a Production Marshal as normal). Songs are taught separately from levels of Bard Song. \n\nA bard may only perform Songs that are equal to or below their level of the Bard Song skill. Each Song that provides a beneficial effect must occupy one of the target’s Buff Slots. All Bard Songs are Charm effects.",
-		"requirements": []
+		"description": "Once/level you may strike your target from behind and call, 'Assassinate' This attack is the equivalent of three deathdealing attacks that must each be defended against individually. This skill is only usable with a 1-handed weapon.",
+		"requirements": [{ "name": "Ambush", "level": "Grand Master" }]
 	},
 	{
-		"name": "Blink",
-		"elements": ["Air"],
+		"name": "Augury",
+		"elements": ["Water"],
 		"level": "Basic",
 		"type": "Skill",
-		"description": "Once/level you may activate this by placing your hand on top of your head and calling, 'Blink.' Once called you become out-of-phase for 10 seconds. While out-of phase you are immune to damage and may only move. You are not immune to Disenchant or Solidify. While moving you leave a visible image of yourself (you are not invisible while out-of-phase) wherever you go and your movement is still limited by inanimate objects (you can’t Blink through walls or doors, but you could Blink between two people provided you could actually fit between them). This skill can be used while under movement-impairing effects (provided you are still able to make the hand motion and say, 'Blink') but it does not remove the effect, once the Blink ends you are once again under the movement-impairing effect. If hit with a Disenchant or Solidify while in a Blink, you are immediately pulled out of it as you cannot resist while Blinking. Being disenchanted out of a Blink will also remove all your buffs.",
-		"requirements": []
-	},
-	{
-		"name": "Portal",
-		"elements": ["Air"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "Once/level you may open a Portal from your current location to anywhere on your current Plane that you are familiar with. To open a Portal you must designate a roughly doorway sized opening as the Portal and somehow mark that it is an active Portal (such as hanging a cloak from a tree/doorway). A Portal will last for one minute. To use the Portal you must touch it and perform a three-count. “One I Portal, two I Portal, three I Portal.” If your count is interrupted, your transit fails and you may try again provided the Portal is still active. Travel through a Portal is not instantaneous, but while traveling you may not perform any actions aside from talking (you may not activate items, cast spells, or use any skills even if they would only require verbal or mental ability to use). A Disenchant or any other magic-disrupting effects will destroy this Portal. You can only Portal to an area that you are familiar with. Becoming familiar with an area takes roughly 10 minutes of time and cannot be done while in combat. If you have not done this, you will not be able to Portal to your chosen destination.",
-		"requirements": [{ "name": "Blink", "level": "Master" }]
-	},
-	{
-		"name": "Disarm Trap",
-		"elements": ["Air"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "Once/level you may Disarm any simple trap. Simple traps are those that do not include magic, area based effects or augmented to be unavoidable or irresistible.",
-		"requirements": []
-	},
-	{
-		"name": "Hide",
-		"elements": ["Air"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "Once/level you may Hide yourself on a five-count. Anyone who watches you at any point during the five-count to Hide knows where you are. This skill may only be used if you are in a location or near an object which could physically hide your presence. You may remain hidden for as long as you wish, but once you have moved from your hiding spot, or perform another action that draws attention, you are no longer hidden. Actions that draw attention include speaking, repairing armor, healing or using any active skill. To signify that you are hidden simply cross your arms in front of you.",
-		"requirements": []
-	},
-	{
-		"name": "Nerve Pinch",
-		"elements": ["Air"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "Once/level you may strike a target from behind and declare, 'Physical Sleep.' Unless the attack is resisted, they fall asleep for five minutes. A sleeping target may be awakened if someone spends an uninterrupted 30-count shaking them awake or via other abilities that specifically state they remove a sleep effect. This skill is only usable with a fist phys rep.",
-		"requirements": []
-	},
-	{
-		"name": "Precision",
-		"elements": ["Air"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "Each level of this skill allows you to deal +2 points of damage with any 1-handed weapon you are trained in provided you strike your target from behind. This skill is only usable with a 1-handed weapon.",
+		"description": "Once/level you may ask a simple (cannot contain any conjunctive words) yes/no question.  If the target of the Augury has a Scry Shield, then your question is blocked and the Scry Shield is not diminished.  Examples of conjunctive words are:  for, and, nor, but, yet, so.",
 		"requirements": []
 	},
 	{
@@ -72,43 +80,129 @@
 		"requirements": [{ "name": "Precision", "level": "Expert" }]
 	},
 	{
-		"name": "Ambush",
+		"name": "Bard Song",
 		"elements": ["Air"],
-		"level": "Master",
+		"level": "Basic",
 		"type": "Skill",
-		"description": "Once/level you may strike your target from behind with an Eviscerate. This skill is only usable with a 1-handed weapon.",
-		"requirements": [{ "name": "Backstab", "level": "Master" }]
+		"description": "This skill may be used once/level/re-pop and requires that the bard perform for at least 30 seconds/level of the Song. All bards must maintain a songbook that contains the description of the performance’s effects. Songs can be taught by any Bard that possesses them to any bard of sufficient level. In order to teach a song the Bard doing the teaching must expend a use of the skill and perform the song (cannot Quick Song when teaching) after which a Temp Tag may be filled out for the learning Bard to add the song to their Song Book (the temp tag must be signed by a Production Marshal as normal). Songs are taught separately from levels of Bard Song. \n\nA bard may only perform Songs that are equal to or below their level of the Bard Song skill. Each Song that provides a beneficial effect must occupy one of the target’s Buff Slots. All Bard Songs are Charm effects.",
+		"requirements": []
 	},
 	{
-		"name": "Assassinate",
+		"name": "Bash",
+		"elements": ["Earth"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may deliver a numbered weapon attack as Crush in place of Edge, Blunt or Claw OR in addition to an enhancer such as Fire, Earth or Magic. This skill is only usable with a blunt weapon. For example, if you normally deal 10 Blunt, you can use Bash to deal 10 Crush instead. If you normally deal 10 Water, you would deal 10 Crushing Water instead.",
+		"requirements": [{ "name": "Strength", "level": "Expert" }]
+	},
+	{
+		"name": "Blink",
+		"elements": ["Air"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may activate this by placing your hand on top of your head and calling, 'Blink.' Once called you become out-of-phase for 10 seconds. While out-of phase you are immune to damage and may only move. You are not immune to Disenchant or Solidify. While moving you leave a visible image of yourself (you are not invisible while out-of-phase) wherever you go and your movement is still limited by inanimate objects (you can’t Blink through walls or doors, but you could Blink between two people provided you could actually fit between them). This skill can be used while under movement-impairing effects (provided you are still able to make the hand motion and say, 'Blink') but it does not remove the effect, once the Blink ends you are once again under the movement-impairing effect. If hit with a Disenchant or Solidify while in a Blink, you are immediately pulled out of it as you cannot resist while Blinking. Being disenchanted out of a Blink will also remove all your buffs.",
+		"requirements": []
+	},
+	{
+		"name": "Block",
+		"elements": ["Fire"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may negate any numerical damaging attack which hits a target within weapon reach by calling, “Block.”  To use this skill you must have a melee weapon or shield in hand and ready for combat (just having your hand on a sheathed weapon is not sufficient).",
+		"requirements": [
+			{ "name": "Weapon Damage OR Shield Defense", "level": "Expert" }
+		]
+	},
+	{
+		"name": "Coordination",
+		"elements": ["Fire"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "You may expend a use of Coordination to create a “battle unit” consisting of yourself and up to three other willing individuals for a combat/scene. Everyone in your unit gains +2 weapon damage, provided they stay within weapons reach of each other at all times. This bonus damage occupies a General Buff Slot and does not apply to Crush/Vorpal damage.",
+		"requirements": [{ "name": "Rally", "level": "Master" }]
+	},
+	{
+		"name": "Crush",
+		"elements": ["Earth"],
+		"level": "Grand Master",
+		"type": "Skill",
+		"description": "You may now deal +1 Crush damage per level of this skill with every weapon attack instead of your regular damage but in addition to damage qualifier type. Other skills that boost damage cannot be used in conjunction with Crush, only the following Crush one-shots work. For example, if your weapon deals Fire damage normally it would deal Crush Fire with this skill, not just Fire. This skill is only usable with certain headed and blunt Great Weapons which are; Great Axes, Great Clubs, Great Hammers, Great Maces and Staves.",
+		"requirements": [
+			{ "name": "Bash", "level": "Expert" },
+			{ "name": "Strength", "level": "Grand Master" }
+		]
+	},
+	{
+		"name": "Cure Ailments",
+		"elements": ["Water"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level the healer may Cure a Toxin or Disease up to their level of this skill.",
+		"requirements": [{ "name": "Healing", "level": "Expert" }]
+	},
+	{
+		"name": "Death Blow",
+		"elements": ["Fire"],
+		"level": "Grand Master",
+		"type": "Skill",
+		"description": "Once/level you may attack with a weapon and call, “Death Blow.” If this attack lands and is not defended against your target instantly dies.",
+		"requirements": [
+			{ "name": "Weapon Damage", "level": "Grand Master" },
+			{ "name": "Eviscerate", "level": "Master" }
+		]
+	},
+	{
+		"name": "Delay Effect",
+		"elements": ["Fire"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may declare, “Delay” when hit by a Fear, Paralyze, or Stun effect. That effect is still upon you, but you do not suffer any effects from it until after the combat is over. Upon the end of the combat, the delayed effect hits you and may not be resisted. If multiple Delay Effects where used in a single combat, all of the effects stack. For example, if you Delay three Stun 10-Second attacks, after the combat you will be stunned for 30 seconds even though the effects to not normally stack. If you Delay a 20-second Fear, a 60-second Paralyze and a five-second Stun, then after the combat you will run in Fear for 20 seconds, then stand in Paralysis for 60 seconds, then be Stunned for five seconds. Fear will take hold first whenever possible upon combat ending, causing you to run away from everyone.",
+		"requirements": [{ "name": "Rage", "level": "Master" }]
+	},
+	{
+		"name": "Destruction Magic",
+		"elements": ["Water"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Destruction is a flavor of damage that, unless resisted, places a de-buff upon the target causing all damage they take to be doubled until the end of Re-Pop. Each level of this skill grants one use of Destruction Magic.",
+		"requirements": [
+			{ "name": "Fire Magic", "level": "Master" },
+			{ "name": "Air Magic", "level": "Master" }
+		]
+	},
+	{
+		"name": "Detect Lie",
+		"elements": ["Water"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may declare, “Detect Lie” before asking a question. After your question is answered the target must reveal if they lied, or were intentionally misleading with the answer they provided. Ideally this should be done in some subtle way, such as when using Detect Lie hold the target’s hand and if they lie have them squeeze your hand.",
+		"requirements": [{ "name": "Soothsaying", "level": "Master" }]
+	},
+	{
+		"name": "Disarm",
 		"elements": ["Air"],
 		"level": "Grand Master",
 		"type": "Skill",
-		"description": "Once/level you may strike your target from behind and call, 'Assassinate' This attack is the equivalent of three deathdealing attacks that must each be defended against individually. This skill is only usable with a 1-handed weapon.",
-		"requirements": [{ "name": "Ambush", "level": "Grand Master" }]
+		"description": "Once/level you may Disarm your opponent by hitting one of their weapons with yours and calling, 'Disarm'",
+		"requirements": [
+			{ "name": "Weapon Damage", "level": "Grand Master" },
+			{ "name": "Speed of Blade OR Vorpal", "level": "Master" }
+		]
 	},
 	{
-		"name": "Scout's Armor Training",
+		"name": "Disarm Trap",
 		"elements": ["Air"],
 		"level": "Basic",
 		"type": "Skill",
-		"description": "",
+		"description": "Once/level you may Disarm any simple trap. Simple traps are those that do not include magic, area based effects or augmented to be unavoidable or irresistible.",
 		"requirements": []
 	},
 	{
-		"name": "Search",
-		"elements": ["Air"],
+		"name": "Disenchant",
+		"elements": ["Water"],
 		"level": "Basic",
 		"type": "Skill",
-		"description": "Each level of this skill provides you with 20 Armor Points when you are wearing armor that is approved by an Armor Marshal. Armor can be padded, leather, scale, chain or plate. See the chart at the end of Chapter Eight: Phys Reps for details on armor coverage and quality.",
-		"requirements": []
-	},
-	{
-		"name": "Sidestep",
-		"elements": ["Air"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "Once/level when hit by a numerical effect you may declare, 'Sidestep' and half all numbers in the attack call (rounding down). This skill may be used twice to reduce the effect to 0. You may not use this skill if your movement is impaired in any way. This skill may not be used on Point or Area of Effect delivered effects",
+		"description": "Once/level you may touch a person, object, or magical construct and declare, “Disenchant.” The effects vary slightly based upon what your target is.\n• If used upon a creature: all effects contained within any of the targets buff slots are removed, as well as effects which provide a benefit but are specifically non-slotted such as Stoneskin, Shifting Image, Fire Shield and Blink.\n• If used upon a magical item it becomes inert for five minutes.\n• If used upon a magical construct it will negate the magical construct. Examples of some magical constructs are Wall/Circle spells, portals, gateways, or other free standing magical anomalies.",
 		"requirements": []
 	},
 	{
@@ -120,6 +214,167 @@
 		"requirements": [{ "name": "Sidestep", "level": "Expert" }]
 	},
 	{
+		"name": "Dream Magic",
+		"elements": ["Water"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Each level of this skill grants one use of Dream Magic and it grants you the knowledge necessary to Activate a Waystone. A use of Dream Magic may be expended to Focus cast a spell. Focus casting removes all verbal and somatic components from spells making them useable even when silenced or confined. To Focus cast a spell, instead of performing a normal incant you just say, “Focus – <Spell Effect>.”",
+		"requirements": [
+			{ "name": "Air Magic", "level": "Master" },
+			{ "name": "Water Magic", "level": "Master" }
+		]
+	},
+	{
+		"name": "Dual Wield",
+		"elements": ["Fire", "Air"],
+		"level": "Basic",
+		"type": "One Shot",
+		"description": "You may now wield a weapon in your off-hand but it must be one size category smaller than the weapon wielded in your main hand unless both weapons are short or small in size. You may not dual-wield shields or bucklers.",
+		"requirements": []
+	},
+	{
+		"name": "Earth Magic",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "This skill allows you to cast Earth spells up to your level of the Earth Magic skill. It also grants you one use/level of Earth Magic. You may expend a use of Earth Magic to throw bursts of rock and stone for a combat. These Packets deal Earth damage equal to 2x your level of this skill.",
+		"requirements": []
+	},
+	{
+		"name": "Endurance",
+		"elements": ["Earth"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level when you are reduced to -1 Life Points and fall to the ground; within three seconds you may call, “Endurance” and be at one Life Point.",
+		"requirements": [{ "name": "Toughness", "level": "Expert" }]
+	},
+	{
+		"name": "Eviscerate",
+		"elements": ["Fire"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may attack with a weapon and call, “Eviscerate.” If this attack lands and is not defended against your target drops to -1 Life Points and should begin a bleeding-to-death count.",
+		"requirements": [
+			{ "name": "Weapon Damage", "level": "Master" },
+			{ "name": "Slay", "level": "Expert" }
+		]
+	},
+	{
+		"name": "Evoke Fear",
+		"elements": ["Fire"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may channel your presence into pure Fear against a single enemy and cause them to flee from you for 10 seconds. 'Fear, 10 Seconds' This effect must be delivered by packet.",
+		"requirements": []
+	},
+	{
+		"name": "Finesse",
+		"elements": ["Air"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may deliver a numbered weapon attack as Vorpal in place of Edge or Claw OR in addition to an enhancer such as Fire, Earth, or Magic. This skill is only usable with an edged weapon. For example, if you normally deal 10 Edge, you can use Finesse to deal 10 Vorpal instead. If you normally deal 10 Water, you would deal 10 Vorpal Water instead.",
+		"requirements": [{ "name": "Weapon Damage", "level": "Expert" }]
+	},
+	{
+		"name": "Fire Magic",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "This skill allows you to cast Fire spells up to your level of the Fire Magic skill. It also grants you one use/level of Fire Magic. You may expend a use of Fire Magic to throw bursts of flame for a combat. These Packets deal Fire damage equal to 2x your level of Fire Magic.",
+		"requirements": []
+	},
+	{
+		"name": "First Aid",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "One Shot",
+		"description": "This skill allows you to stabilize a target who is bleeding-to-death by taking a 30-count. While you are performing First Aid, the target’s bleed-out count stops. Upon completion the target is placed at 0 Life Points. You can also use this skill to determine how much damage a friendly/incapacitated target has suffered to their Life Points by asking, “How many Life Points are you down?” Other questions that can be asked to determine status through the skill include “Are you bleeding to death?”, “Are you dead?”, “Are you poisoned/suffering from toxins?”, “Are you diseased?” and “Are you tainted?”",
+		"requirements": []
+	},
+	{
+		"name": "Gem Craft",
+		"elements": ["Fire"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill provides 5PP which can be used to cut gems and create jewelry. At the Basic level you are able to evaluate gems and determine their value, you can also take an uncut gem and cut it into an octagon-shaped gem. You are able to create gems and jewelry items that you have the recipe for and are equal to or lower than your level of Gem Craft skill. To cut a gem the following must ALL be true:\n1. You must have an uncut gem that you are converting into a cut gem;\n2. You must spend 4PP/Verlan of value that the gem is being cut into. Gems must be cut to a specific value based upon color and shape; and\n3. A Production Marshal must witness the crafting of the item and initial your temp tag. At the next check-in bring the uncut gem and the temp tag and you can trade them in for the cut version of the gem you crafted.",
+		"requirements": []
+	},
+	{
+		"name": "Healing",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may heal 10x your level of Healing by touch. Simply touch the target and announce, “Heal X” where X is the number of points healed. The multiplier is capped at level 10 (at level 11, you have 11 uses of 100 Healing).",
+		"requirements": [{ "name": "First Aid", "level": "Basic" }]
+	},
+	{
+		"name": "Herbalism",
+		"elements": ["Earth"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill provides 5pp that can be used to craft herbalism items. At the basic level an herbalist is able to craft any recipe they know as a Bandage or Poultice. Using a bandage or Poultice takes an uninterrupted 30 count to apply and then 10 minutes of time to take effect. A person may only have one Herbalism timer in effect on them at a time, but this timer does not interfere with other counted actions. To create an Herbalism item the following must ALL be true:\n1. You must have a copy of the recipe for the item you wish to create;\n2. You must have a phys rep for the item;\n3. Your Herbalism skill must be equal to or higher than the level of the recipe you are crafting;\n4. If the recipe is level 10 expendable or higher it requires the expenditure of one Rare material; and\n5. A Production Marshal must witness the crafting of the item and initial your temp tag.",
+		"requirements": []
+	},
+	{
+		"name": "Hide",
+		"elements": ["Air"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may Hide yourself on a five-count. Anyone who watches you at any point during the five-count to Hide knows where you are. This skill may only be used if you are in a location or near an object which could physically hide your presence. You may remain hidden for as long as you wish, but once you have moved from your hiding spot, or perform another action that draws attention, you are no longer hidden. Actions that draw attention include speaking, repairing armor, healing or using any active skill. To signify that you are hidden simply cross your arms in front of you.",
+		"requirements": []
+	},
+	{
+		"name": "Knockback",
+		"elements": ["Earth"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may deliver a, “Knockback 10” attack which causes the target to get knocked 10’ away from you. This attack does not deal any damage it just knocks the target away from you. Requires a melee weapon to use.",
+		"requirements": [
+			{ "name": "Strength", "level": "Expert" },
+			{ "name": "Weapon Damage", "level": "Expert" }
+		]
+	},
+	{
+		"name": "Knowledge",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may use your knowledge skill to grant a skill Buff to someone. A skill Buff occupies an appropriate Buff Slot and increases the level of a specific skill that the target possesses by one level for the Combat/Scene. Each skill can only be boosted once per combat/scene. The target’s level in the skill they are getting buffed may not exceed your level of the knowledge skill +1. This ability may not be used on Path skills, Racial skills, skills that are used at check-in, skills that provide PP or Mana (but may be used to increase the level of recipe you can craft with a skill) or on itself. Using this ability takes at least 10 seconds as you explain to the person how to perform the skill better. Anything granted through these increased levels / buffs are always used first and are used for the Re-Pop. For example, if you are granted a level of the Resist Damage skill, you gain one Resist Damage. The next Resist Damage you use is the one granted by knowledge. If later in the same Re-Pop you are granted the Resist Damage skill bump, you already used that Resist Damage so do not gain it.",
+		"requirements": []
+	},
+	{
+		"name": "Mana",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "This skill provides 10 Mana/level which can be used to cast spells from your Spell Book per the rules for casting spells.",
+		"requirements": [{ "name": "Read Magic", "level": "Basic" }]
+	},
+	{
+		"name": "Mend Wound",
+		"elements": ["Water"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may heal a target to full Life Points with an uninterrupted 100-count.",
+		"requirements": [{ "name": "Healing", "level": "Expert" }]
+	},
+	{
+		"name": "Nerve Pinch",
+		"elements": ["Air"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may strike a target from behind and declare, 'Physical Sleep.' Unless the attack is resisted, they fall asleep for five minutes. A sleeping target may be awakened if someone spends an uninterrupted 30-count shaking them awake or via other abilities that specifically state they remove a sleep effect. This skill is only usable with a fist phys rep.",
+		"requirements": []
+	},
+	{
+		"name": "Parry",
+		"elements": ["Fire"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may parry any damaging physical attack that hits a target within weapon reach by calling, “Parry.” This skill does not work against spells, Spell Strikes, gas Packets, or Lash attacks. To use this skill you must have a melee weapon in hand and ready for combat (just having your hand on a sheathed weapon is not sufficient).",
+		"requirements": [{ "name": "Block", "level": "Expert" }]
+	},
+	{
 		"name": "Phase",
 		"elements": ["Air"],
 		"level": "Master",
@@ -129,6 +384,386 @@
 			{ "name": "Sidestep", "level": "Master" },
 			{ "name": "Dodge", "level": "Master" }
 		]
+	},
+	{
+		"name": "Portal",
+		"elements": ["Air"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may open a Portal from your current location to anywhere on your current Plane that you are familiar with. To open a Portal you must designate a roughly doorway sized opening as the Portal and somehow mark that it is an active Portal (such as hanging a cloak from a tree/doorway). A Portal will last for one minute. To use the Portal you must touch it and perform a three-count. “One I Portal, two I Portal, three I Portal.” If your count is interrupted, your transit fails and you may try again provided the Portal is still active. Travel through a Portal is not instantaneous, but while traveling you may not perform any actions aside from talking (you may not activate items, cast spells, or use any skills even if they would only require verbal or mental ability to use). A Disenchant or any other magic-disrupting effects will destroy this Portal. You can only Portal to an area that you are familiar with. Becoming familiar with an area takes roughly 10 minutes of time and cannot be done while in combat. If you have not done this, you will not be able to Portal to your chosen destination.",
+		"requirements": [{ "name": "Blink", "level": "Master" }]
+	},
+	{
+		"name": "Precision",
+		"elements": ["Air"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill allows you to deal +2 points of damage with any 1-handed weapon you are trained in provided you strike your target from behind. This skill is only usable with a 1-handed weapon.",
+		"requirements": []
+	},
+	{
+		"name": "Press",
+		"elements": ["Fire"],
+		"level": "Grand Master",
+		"type": "Skill",
+		"description": "Once/level you may declare, “Press” when one of your attacks lands but is defended against by your target through a skill or ability. They must then defend against that exact same attack again. Only one press may be used per weapon attack.",
+		"requirements": [
+			{ "name": "Weapon Damage", "level": "Grand Master" },
+			{ "name": "Speed of Blade", "level": "Master" }
+		]
+	},
+	{
+		"name": "Protection Magic",
+		"elements": ["Water"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Each level of this skill grants one use of Protection Magic. It also allows you to refit any Mystical Armor that is within a target's Armor Buff Slot. This ability takes an uninterrupted 100-count to use. You may expend a use of your Protection Magic to grant a Protection Slot to someone. A target may only ever have one Protection Slot, this Slot may be used as either a Toughness or Armor Buff Slot and lasts until Re-Pop or the target is disenchanted.",
+		"requirements": [
+			{ "name": "Earth Magic", "level": "Master" },
+			{ "name": "Water Magic", "level": "Master" }
+		]
+	},
+	{
+		"name": "Quick Healing",
+		"elements": ["Earth"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may activate Quick Healing. To activate this skill takes three seconds and you must call out, “Quick Healing 1, Quick Healing 2, Quick Healing 3.” Any damage dealt to you in this time negates the Quick Healing. At the end of your count you instantly heal for 50 Life Points.",
+		"requirements": [
+			{ "name": "Toughness", "level": "Master" },
+			{ "name": "Endurance", "level": "Master" }
+		]
+	},
+	{
+		"name": "Radiance Magic",
+		"elements": ["Water"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Each level of this skill grants one use of Radiance Magic and it allows you to transform the damage type of any offensive Earth or Fire spells to Radiance. You may expend a use of Radiance Magic to call forth a single weapon made of Radiance energy that deals un-modifiable damage equal to your level of Radiance Magic. The Radiance weapon lasts for the Re-Pop unless it leaves your person or is disenchanted.",
+		"requirements": [
+			{ "name": "Earth Magic", "level": "Master" },
+			{ "name": "Fire Magic", "level": "Master" }
+		]
+	},
+	{
+		"name": "Rage",
+		"elements": ["Fire"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each time this skill is purchased you gain the ability to declare, 'Rage' and the weapon damage of your next attack is doubled (after all other modifiers). Rage does not affect venoms or poisons. For example; 20 Edge would become 40 Edge. 20 Edge + a Slay (100 Slay) would become, “Rage – 200 Slay.”",
+		"requirements": []
+	},
+	{
+		"name": "Raise Dead",
+		"elements": ["Water"],
+		"level": "Grand Master",
+		"type": "Skill",
+		"description": "Once/level you may return to life any willing creature which has died within the Re-Pop. This skill results in the target losing one point of Vitality if they are raised more than one minute past death. If they do not have any Vitality then the skill fails and is still expended. When anyone is raised through use of the skill they are raised with full life.",
+		"requirements": [{ "name": "Healing", "level": "Grand Master" }]
+	},
+	{
+		"name": "Rally",
+		"elements": ["Fire"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may Rally someone who has been overcome by fear allowing them to overcome their fear ('Dispel Fear').",
+		"requirements": [{ "name": "Evoke Fear", "level": "Expert" }]
+	},
+	{
+		"name": "Read Magic",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "One Shot",
+		"description": "This skill allows you to read magical writings and allows you to read and use scrolls.",
+		"requirements": []
+	},
+	{
+		"name": "Read/Write",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "One Shot",
+		"description": "Each language listed under this skill is a considered a Basic one-shot skill. Please note that in some cases, players may learn languages that are not on this list, but they are unable to teach them to another player.\nAvyana\nHuman – Great Plateau\nHuman – Silverthorne\nHuman – Windcrest\nHuman – Allerian\nDwarven\nEfreet\nFire Elven\nMathematics\nGa’vin\nOrcish\nGnomish\nSylvani\nGuthrie\nValken’Vi\nHigh Elven\nWood Elven",
+		"requirements": []
+	},
+	{
+		"name": "Reflect Magic",
+		"elements": ["Water"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may Reflect any Magic or spell effect back on the initiator by calling, “Reflect Magic.”",
+		"requirements": [
+			{ "name": "Resist Elements", "level": "Master" },
+			{ "name": "Resist Magic", "level": "Master" }
+		]
+	},
+	{
+		"name": "Relic Crafting",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill provides 5PP that can be used to craft Relic Crafting items. A scroll is a magical paper that contains everything needed to enact a specific spell. In order to use a scroll you must be able to Read Magic. Using a scroll requires that you have a light with which to read the scroll. You must touch the spell Packet to the scroll, recite the incant on the scroll and you may then deliver the spell. The scroll is then expended and should be ripped in half. Each level of this skill provides 5PP which can be used to craft relics and scrolls.\nTo create a scroll the following must ALL be true:\n1. You must have a legal copy of the scroll you wish to create;\n2. You must have the necessary skill levels to be able to cast the spell (if you are trying to craft a level 5 Fire scroll, but you only possess level 3 Fire Magic, you may not create that scroll even if your Relic Crafting skill is level 5 or higher, you simply don’t have the working knowledge of how Fire Magic works);\n3. Your level of Relic Crafting must be equal to or higher than the level of the scroll;\n4. You must expend 4PP for each level of the scroll you are creating;\n5. If the recipe is level 10 expendable or higher it requires the expenditure of one Rare material; and\n6. A Production Marshal must witness the crafting of the item and initial your temp tag.\nTo create a Relic the following must ALL be true:\n1. You must have a copy of the recipe for the item you wish to create;\n2. You must have a phys rep for the item;\n3. Your Relic Crafting skill must be equal to or higher than the level of the recipe you are crafting;\n4. If the recipe is level 10 expendable or higher it requires the expenditure of one Rare material.\n5. A Production Marshal must witness the crafting of the item and initial your temp tag; and\n6. All wand phys reps must be at least 12 inches long and may not be used to block or attack in melee.",
+		"requirements": [
+			{ "name": "Read/Write", "level": "Basic" },
+			{ "name": "Read Magic", "level": "Basic" }
+		]
+	},
+	{
+		"name": "Remove Wound",
+		"elements": ["Water"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level the healer may remove the last numerical wound the target took provided the target is still alive. If the target cannot remember the last wound they took, then this skill will heal 50 Life Points. For example, Gekek gets hit by 200 Slay and takes the hit, before anything else strikes him Aurora taps him and says,'Remove Wound.' That 200 Slay is now healed (think of it like a Hero Skill for healers).",
+		"requirements": [{ "name": "Healing", "level": "Master" }]
+	},
+	{
+		"name": "Research",
+		"elements": ["Water"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "You may perform recipe or spell research. You may research a specific recipe or spell that you know exists (you may not use this skill to create new spells or recipes). This costs one use of your research skill per level of the recipe or spell you are attempting to research. If your research is completed mid-event you will not gain your new recipe or spell until your next Logistics session. If you are conducting research over multiple Re-Pops please maintain a research log that shows your Research expenditures for a given recipe and have the expenditures notarized (Signed and Dated) by a GM or Production Marshal. Acquiring a spell in this fashion still requires you to spend the material cost (Rare or Exotic material) if the scroll being created normally calls for one, as well as the PP to acquire the scroll (please see Relic Crafting for the rules on scroll creation). A recipe acquired through research is not automatically placed in your Recipe Book, you must expend the skill use and material cost to do so (Rare or Exotic material). This research only lasts for one event. If the recipe or scroll is not copied before the end of the event the research becomes misplaced and must be recreated the next event if desired. You may expend a level of research to ask a simple question that can yield up to a one sentence answer. The information must be something that could have reasonably been researched and recorded at some point in history. Notes from the queen’s diary are not fair game, but knowledge of the aggressive habits of goblins is. Generally if it is something that someone may have studied or witnessed and written about you could ask a question about it. You could ask 'What city in Silverthorne has the most Valken'vi', 'The city of Gateway.' But you could not ask 'Where is the mage known as Dietrich.' The GM/NPC is always the final say on whether a question is legitimate for the situation.",
+		"requirements": [
+			{ "name": "Knowledge", "level": "Expert" },
+			{ "name": "Read/Write", "level": "Basic" }
+		]
+	},
+	{
+		"name": "Resist Damage",
+		"elements": ["Earth"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may negate any damaging effect by calling, “Resist Damage.”",
+		"requirements": [{ "name": "Resist Pain", "level": "Expert" }]
+	},
+	{
+		"name": "Resist Effect",
+		"elements": ["Earth"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may negate any effect that targets you by calling, “Resist Effect.”",
+		"requirements": [
+			{ "name": "Resist Pain", "level": "Master" },
+			{ "name": "Resist Damage", "level": "Master" }
+		]
+	},
+	{
+		"name": "Resist Elements",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may negate any call that includes Earth/Stone, Air/Lightning, Fire, Water/Ice in the damage call by calling, “Resist Elements.”",
+		"requirements": []
+	},
+	{
+		"name": "Resist Fear",
+		"elements": ["Fire"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may resist any call with the word “Fear” in it.",
+		"requirements": []
+	},
+	{
+		"name": "Resist Magic",
+		"elements": ["Water"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may negate any magic or spell effect by calling, “Resist Magic.”",
+		"requirements": [{ "name": "Resist Elements", "level": "Expert" }]
+	},
+	{
+		"name": "Resist Pain",
+		"elements": ["Earth"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may negate any numbered damage call by calling, “Resist Pain.”",
+		"requirements": []
+	},
+	{
+		"name": "Resist Physical",
+		"elements": ["Fire"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may resist any call that has the word “Physical” in it by calling, “Resist Physical.” This includes things like Physical Fire 50, or Physical Acid 20, but does not include the calls, “30 Fire” or “20 Acid.”",
+		"requirements": [
+			{ "name": "Soldier's Armor Training", "level": "Master" }
+		]
+	},
+	{
+		"name": "Riposte",
+		"elements": ["Fire"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may declare, “Riposte” when a strike by a weapon blow occurs upon a target within your weapon reach. The initiator of the weapon blow becomes the new target of that attack and must call a defense or take the attack as if it had just hit them instead of the intended target. To use this skill you must have a melee weapon in hand and ready for combat (just having your hand on a sheathed weapon is not sufficient). Riposte will work against ranged attacks but will not send them back against the attacker. When used against an attack that has multiple effects such as assassinate, only one effect is riposted with each use of this skill. Example: Taleous sneaks up and assassinates Daniel. Daniel is suffering from 3 death effects (since Assassinate is 3 simultaneous death effects). He can call riposte and send one of them back at Taleous, but still has two more death affects that he needs to deal with otherwise he is dead (even if the one he riposted kills Taleous as well). If he wishes to send the entire assassinate back at Taleous he would need to call Riposte 3 times.",
+		"requirements": [
+			{ "name": "Block", "level": "Master" },
+			{ "name": "Parry", "level": "Master" }
+		]
+	},
+	{
+		"name": "Ritualism",
+		"elements": ["Water"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "This skill represents a mage’s mastery over all four Elements of Magic and the ability to combine all four of those Magics into a Ritual spell.\nA ritualist gains one use of Ritualism/level of skill. These levels can be used to cast Rituals per the following rules:\n1. A ritualist may cast Rituals equal to or lower than their level of the Ritualism skill;\n2. A ritualist must have a Ritual scroll for the Ritual they wish to cast;\n3. A ritualist must follow the directions on the scroll detailing what components are necessary for the Ritual;\n4. A Ritual takes one minute/level to perform;\n5. A Ritual takes one use of Ritualism/level of the Ritual (unless using Dark Territory);\n6. A Magic Marshal or GM must be present for the Ritual; and\n7. If casting in Dark Territory, a GM must be notified prior to starting the Ritual.",
+		"descriptionExt": "How to Cast a simple Ritual\nTo cast a Ritual you begin by gathering your components, the Ritual scroll and the target of the Ritual. The Ritual scroll must be visible at all times while Ritual casting. The Magic Marshal will verify that all components are present and that the Ritual scroll is valid and determine if you are casting in Dark Territory or not (see below for details). Once the Magic Marshal indicates everything is in order you may begin through the following process:\n• First, declare, “Begin Ritual.”\n• Second, declare the Ritual name. For example, “Grant Planar Asylum: Fire.”\n• Third, declare the target such as, “Myself.”\n• The Magic Marshal will then call out, “Ritual Begins,” at this point all components, skill levels, etc. are expended. This is the also where the Magic Marshal needs to inform you of any modifications from Plot/world events (such as casting a Ritual during October or May). The Magic Marshal does not inform you why the effect is happening, they will simply notify you of the result and you then have the option to expend additional uses of Ritualism to attempt to counteract the effect. Once that is resolved the Ritual may continue, if enough magic was not available the Ritual may continue in Dark Territory, or in some cases it may simply fail at this point.\n• The Ritual caster must spend the required Ritual time in concentration. If they are disturbed, the Magic Marshal may require them to expend additional levels of Ritual Magic to stabilize the Ritual from the disturbance. Examples of disturbances might include shouting, taking damage, being hit by a spell, being shaken, bumped, pushed, etc. If the caster does not have additional levels of Ritual Magic available, the Ritual either enters into Dark Territory (notify a GM upon conclusion of the Ritual) or the Ritual immediately fails (caster’s choice), all components are expended and a charge from the Ritual scroll is used up. If the caster is so far into Dark Territory already and suffer a disturbance, the Ritual will simply fail expending all resources used in the Ritual. In the event the Ritual caster falls unconscious, or is killed, during the Ritual the result is automatically a backlash (which ends the Ritual). A backlash causes\n• 10x the level of the Ritual in Magic damage, a number of times equal to the level of Dark Territory, in a Voice-Radius. So a level 5 Ritual that is at Dark Territory 3 when the caster is killed would result in “Voice-Radius 50 Magic” three times.\nOnce the time has passed the Magic Marshal will declare, “Ritual Ends” and if all went well, “Ritual Succeeds.” If the Ritual went into Dark Territory during the casting, someone must notify a GM and provide them the following information:\no What Ritual it was.\no Who the primary Ritual caster was.\no Any additional casters involved.\no Anyone else present during the casting.\no How far into Dark Territory the Ritual went (on to ten).",
+		"requirements": [
+			{ "name": "Earth Magic", "level": "Master" },
+			{ "name": "Fire Magic", "level": "Master" },
+			{ "name": "Water Magic", "level": "Master" },
+			{ "name": "Air Magic", "level": "Master" }
+		]
+	},
+	{
+		"name": "Scout's Armor Training",
+		"elements": ["Air"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill provides you with 20 Armor Points when you are wearing armor that is approved by an Armor Marshal. Armor can be padded, leather, scale, chain or plate. See the chart at the end of Chapter Eight: Phys Reps for details on armor coverage and quality.",
+		"requirements": []
+	},
+	{
+		"name": "Scry Shield",
+		"elements": ["Air"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "For each level of this skill you automatically stop one divination used upon you each re-pop. So if you have level 3 in this skill, the first three divinations used upon you automatically fail. Note: not all divinations reduce the level of your Scry Shield. Consult the specific divination skill for specifics.",
+		"requirements": [{ "name": "Undetectable Lie", "level": "Expert" }]
+	},
+	{
+		"name": "Search",
+		"elements": ["Air"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill provides you with 20 Armor Points when you are wearing armor that is approved by an Armor Marshal. Armor can be padded, leather, scale, chain or plate. See the chart at the end of Chapter Eight: Phys Reps for details on armor coverage and quality.",
+		"requirements": []
+	},
+	{
+		"name": "Sense Magic",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level you may touch an object or person and declare, “Sense Magic.” The target must reveal to you if they possess any magic skills and if they have any effects in Buff Slots.",
+		"requirements": []
+	},
+	{
+		"name": "Shield Defense",
+		"elements": ["Earth", "Fire"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill grants you one point of AC when using a full-sized shield (non-buckler). AC reduces the effect of all number-based damaging attacks by a value equal to your AC down to a minimum of one. This skill is only usable with a shield. For example, if you have 4 AC and get hit for 6 Edge, your AC reduces that damage down to 2 Edge. If you have 4 AC and you get hit for 3 Edge, your AC reduces that to 1 Edge. If you get hit for 5 Vorpal, it would reduce the damage to 1 Vorpal.",
+		"requirements": []
+	},
+	{
+		"name": "Sidestep",
+		"elements": ["Air"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Once/level when hit by a numerical effect you may declare, 'Sidestep' and half all numbers in the attack call (rounding down). This skill may be used twice to reduce the effect to 0. You may not use this skill if your movement is impaired in any way. This skill may not be used on Point or Area of Effect delivered effects",
+		"requirements": []
+	},
+	{
+		"name": "Slay",
+		"elements": ["Fire"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may deliver an attack for “100 Slay.”",
+		"requirements": [{ "name": "Weapon Damage", "level": "Expert" }]
+	},
+	{
+		"name": "Smash",
+		"elements": ["Earth"],
+		"level": "Grand Master",
+		"type": "Skill",
+		"description": "Once/level you may deliver a Crushing Death attack with a weapon. The call for this attack is “Smash.” This skill is only usable with a blunt weapon.",
+		"requirements": [
+			{ "name": "Crush", "level": "Master" },
+			{ "name": "Strength", "level": "Grand Master" }
+		]
+	},
+	{
+		"name": "Smithing",
+		"elements": ["Fire"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill provides 5PP that can be used to craft weapons, Armor and Smithing items.\nAs a smith you have the following abilities available to you:\n• You may take an uninterrupted 100-count and reset a suit of physical Armor to full value. If you take any other action, use any other skill, or take any effect/damage (even beneficial) during this count you are interrupted and must start over again. You may use this skill upon any physical suit of Armor (Light or Heavy), but may not be used on Spell or Racial Armors unless that skill specifically states that you can.\n• You can determine how damaged a friendly target’s Armor is by asking, “How damaged is your Armor?”\n• Restore Shattered Weapon – You can Restore a Shattered Weapon. To do this it must be a weapon that you are capable of crafting to begin with, you must spend ½ the PP it took to craft the weapon originally and this process does not restore any magic or additional effects the weapon may contain unless you also possess the ability to replace those in which case ½ the total PP of those effects must also be spent.",
+		"descriptionExt": "To craft an item with Smithing all of the following must be true:\n1. You must have a copy of the recipe for the item you wish to create;\n2. You must have a phys rep for the item;\n3. Your Smithing skill must be equal to or higher than the level of the recipe you are crafting;\n4. You must have all necessary components required by the recipe;\n5. If the recipe is a level 10 expendable or higher it requires the expenditure of one Rare material;\n6. Permanent items will have different material requirements based on the recipe; and\n7. A Production Marshal must witness the crafting of the item and initial your temp tag.",
+		"requirements": []
+	},
+	{
+		"name": "Soldier's Armor Training",
+		"elements": ["Fire"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill provides you with 20 Armor Points when you are wearing armor that is approved by an Armor Marshal. Armor can be padded, leather, scale, chain or plate. See the chart at the end of Chapter Eight: Phys Reps for details on armor coverage and quality.",
+		"requirements": []
+	},
+	{
+		"name": "Soothsaying",
+		"elements": ["Water"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level/Re-Pop you may ask a question that will receive a one word answer. If this question is blocked by a Scry Shield, then the Scry Shield is diminished by one level and your question does not receive an answer.",
+		"requirements": [{ "name": "Augury", "level": "Expert" }]
+	},
+	{
+		"name": "Speed of Blade",
+		"elements": ["Fire"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may auto land a numerical damage dealing weapon blow by calling, “Speed-of-Blade.” You must be in range of your target with your weapon to use this skill.",
+		"requirements": [{ "name": "Weapon Damage", "level": "Master" }]
+	},
+	{
+		"name": "Spell Weaving",
+		"elements": ["Water"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "This skill provides 5PP/level that can be used for the crafting of items with magical spell-like abilities. To create such an item all of the following must be true:\n1. You must be able to cast the spell you wish to enchant the item with and the spell may not be modified in any way;\n2. You must have a phys rep for the item which you are placing the spell upon;\n3. The phys rep must have an available Enchantment Slot, or the Spell weaver must be of proficient skill to add additional enchantments. All basic spell weavers can place one enchantment on an item, any additional enchantments must be added through higher level spell weaving;\n4. Your level of Spell Weaving must be equal to or higher than the level of the spell;\n5. You must expend 4PP/level of the spell you are placing into the item;\n6. If the spell is level 10 or higher and is going into an expendable item it requires the expenditure of one Rare material; and\n7. A Production Marshal must witness the crafting of the item and initial your temp tag.",
+		"descriptionExt": "To use the item after it is created simply say the word, “Activate” followed by the spell name and effect. So if you create an item that grants a Resist Fire to use this item simply say, “Activate – Grant Resist Fire” and the item is now used up and must be re-enchanted before it can be used again, unless it has multiple Enchantments upon them.\nEnchantable Quality (Expert one-shot) – With this skill a Spell Weaver can add additional Enchantments to an item per the following rules:\n• An item may not have more than four total Enchantments.\n• The number of Enchantments on it item can only be added based off the named levels of Spell Weaving that the crafter possesses. A basic spell weaver can only add the first enchantment to an item, an expert can add a second, a master can add the third enchantment and a grandmaster spell weaver can add the fourth enchantment to an item. All crafted items may only have four total enchantments.\n• Any enchantments already upon an item that is having additional Enchantments placed upon it may not be called upon until the crafting process is completed.",
+		"requirements": [{ "name": "Sense Magic", "level": "Master" }]
+	},
+	{
+		"name": "Strength",
+		"elements": ["Earth"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "With each level of this skill you gain one point of Strength. Strength is gained in alternating fashion between your right arm and left arm. These points of Strength add to any weapon damage you deal with that arm. If you wield a weapon with both arms it receives the Strength bonus from each arm.",
+		"requirements": []
+	},
+	{
+		"name": "Stun",
+		"elements": ["Earth"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "Once/level you may deliver a “Stun 5.” This attack stuns the target for five seconds. While Stunned you may not take any action or use any active skill for 5 seconds.",
+		"requirements": [
+			{ "name": "Strength", "level": "Master" },
+			{ "name": "Weapon Damage", "level": "Master" }
+		]
+	},
+	{
+		"name": "Tactics",
+		"elements": ["Fire"],
+		"level": "Master",
+		"type": "Skill",
+		"description": "You gain one use of this skill/level. The skill is used to establish a tactical unit for the duration of a single combat. To do this you must establish a tactical unit per the following criteria:\n1. You may add someone to your tactical unit by expending a use of your Tactics skill;\n2. An individual may only be part of one tactical unit at a time;\n3. A unit has a max size of your level of the Tactics skill + yourself;\n4. All members must be declared in advance of the combat;\n5. All members of the tactical unit must be involved in the combat; and\n6. All members of the tactical unit must be in sight of each other.\nA tactical unit lasts for the duration of a combat. Any skill remaining in the tactician’s pool at the end of combat must be re-allocated to members of the unit by the tactician. The tactician may not keep them for themselves.",
+		"descriptionExt": "Each member of the unit may then transfer up to one use of a skill into the tactical pool. The tactician may then grant these skills to other members of the unit, or at any time, use those skills for a member of the unit provided they do so within the appropriate response time to the affect hitting the unit member. For example, Rox has level 4 Tactics; he forms a unit of Bob, Andy, Keith, Damien and himself. Before they go to into battle they prepare and Rox has each member of his unit pass him a use of Resist Damage. Rox now has four additional Resist Damages that he can use for anyone in his unit if he witnesses them take damage. So if Andy charges the death knight while Bob and Keith are busy and takes three Death Blows in rapid succession, Rox could call Resist Damage for all three of those using the ones he was granted earlier by other members of the unit and keeping Andy alive when he would have died if he did not have three resistances of his own.",
+		"requirements": [{ "name": "Coordination", "level": "Master" }]
+	},
+	{
+		"name": "Taunt",
+		"elements": ["Fire"],
+		"level": "Expert",
+		"type": "Skill",
+		"description": "Once/level you may attack someone and call, “Taunt strike – 10 Seconds.” Unless resisted that target must now focus entirely upon you for the next 10 seconds.",
+		"requirements": [{ "name": "Resist Fear", "level": "Expert" }]
+	},
+	{
+		"name": "Toughness",
+		"elements": ["Earth"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "This grants 20 Life Points/level of the skill.",
+		"requirements": []
 	},
 	{
 		"name": "Trade",
@@ -155,36 +790,12 @@
 		"requirements": []
 	},
 	{
-		"name": "Scry Shield",
-		"elements": ["Air"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "For each level of this skill you automatically stop one divination used upon you each re-pop. So if you have level 3 in this skill, the first three divinations used upon you automatically fail. Note: not all divinations reduce the level of your Scry Shield. Consult the specific divination skill for specifics.",
-		"requirements": [{ "name": "Undetectable Lie", "level": "Expert" }]
-	},
-	{
 		"name": "Urban Knowledge",
 		"elements": ["Air"],
 		"level": "Basic",
 		"type": "Skill",
 		"description": "Once/level you may do one of the following: \n  1. Ask a basic question about an urban setting. This question would generally need to be answerable with a number of words equal to or lower than your level of urban knowledge. \n  2. You may cover the basic upkeep for one person at check-in. \n  3. You may acquire the location of an NPC with the ability to teach a specific skill. This ability requires the expenditure of one level of Urban Knowledge/level of the skill you are trying to locate a teacher for, including all pre-req levels for the skill. You can only find a teacher for skills of Grand Master level or lower. For Example; if you are trying to locate a teacher for level 1 of the Slay skill, which requires level 3 Weapon Damage, you would need to expend four uses of this skill to find a teacher who can teach level 1 Slay. You may gather this information over time, but to do this you must keep a logbook of your knowledge and have a GM initial your expenditure towards a specific teacher if it is being done over multiple re-pops or events.\n  4. You may analyze a lock, determining what level the lock is, if it has an traps upon it and if it has been made extra difficult to pick.",
 		"requirements": []
-	},
-	{
-		"name": "Weapon Damage",
-		"elements": ["Air", "Fire", "Water", "Earth"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "Each level of this skill allows you to deal one additional point of damage with any 1-handed weapon you are trained in or 1½ points of damage (round down) with any great weapon you are trained in.",
-		"requirements": []
-	},
-	{
-		"name": "Finesse",
-		"elements": ["Air"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "Once/level you may deliver a numbered weapon attack as Vorpal in place of Edge or Claw OR in addition to an enhancer such as Fire, Earth, or Magic. This skill is only usable with an edged weapon. For example, if you normally deal 10 Edge, you can use Finesse to deal 10 Vorpal instead. If you normally deal 10 Water, you would deal 10 Vorpal Water instead.",
-		"requirements": [{ "name": "Weapon Damage", "level": "Expert" }]
 	},
 	{
 		"name": "Vorpal",
@@ -198,631 +809,19 @@
 		]
 	},
 	{
-		"name": "Disarm",
-		"elements": ["Air"],
-		"level": "Grand Master",
-		"type": "Skill",
-		"description": "Once/level you may Disarm your opponent by hitting one of their weapons with yours and calling, 'Disarm'",
-		"requirements": [
-			{ "name": "Weapon Damage", "level": "Grand Master" },
-			{ "name": "Speed of Blade OR Vorpal", "level": "Master"}
-		]
-	},
-	{
-		"name": "Alchemy",
-		"elements": ["Earth"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "Each level of this skill provides 5PP which can be used to craft Alchemical Potions. These items are designed to enhance, protect and positively alter living creatures. All alchemies at the base level are ingested liquids and must be drunk to take effect. If placed in another liquid that liquid will now hold the effects of the Alchemy for the first person to drink the liquid (if multiple doses are placed in the same liquid then one drink uses up one dose).\n\nTo create an Alchemical Potion the following must ALL be true: \n 1. You must have a copy of the recipe for the Potion you wish to create; \n  2. You must have a container to hold the Potion (vial for liquid/paste or gas globe (Packet) for diffused/dispersed); \n  3. Your Alchemy skill must be equal to or higher than the level of the recipe you are crafting; \n  4. If the recipe is level 10 expendable or higher it requires the expenditure of one Rare material; \n  5. A Production Marshal must witness the crafting of the Potion and initial your temporary (temp) tag; and \n  6. All Potion effects last until re-pop or used, unless the recipe specifically states otherwise. \n\nAll alchemists also have the ability to identify Alchemical Potions by spending 100 seconds examining it. After this time is done they may look at the tag and if it is an alchemical Potion (not a Poison) they are able to tell what it is.",
-		"requirements": []
-	},
-	{
-		"name": "Animal Ken",
-		"elements": ["Earth"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Animalism",
-		"elements": ["Earth"],
-		"level": "Grand Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Animal Ken", "level": "Grand Master" }]
-	},
-	{
-		"name": "Herbalism",
-		"elements": ["Earth"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Resist Pain",
-		"elements": ["Earth"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Resist Damage",
-		"elements": ["Earth"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Resist Pain", "level": "Expert" }]
-	},
-	{
-		"name": "Resist Effect",
-		"elements": ["Earth"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Resist Pain", "level": "Master" },
-			{ "name": "Resist Damage", "level": "Master" }
-		]
-	},
-	{
-		"name": "Shield Defense",
-		"elements": ["Earth", "Fire"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Strength",
-		"elements": ["Earth"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Bash",
-		"elements": ["Earth"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "Once/level you may deliver a numbered weapon attack as Crush in place of Edge, Blunt or Claw OR in addition to an enhancer such as Fire, Earth or Magic. This skill is only usable with a blunt weapon. For example, if you normally deal 10 Blunt, you can use Bash to deal 10 Crush instead. If you normally deal 10 Water, you would deal 10 Crushing Water instead.",
-		"requirements": [{ "name": "Strength", "level": "Expert" }]
-	},
-	{
-		"name": "Crush",
-		"elements": ["Earth"],
-		"level": "Grand Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Bash", "level": "Expert" },
-			{ "name": "Strength", "level": "Grand Master" }
-		]
-	},
-	{
-		"name": "Smash",
-		"elements": ["Earth"],
-		"level": "Grand Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Crush", "level": "Master" },
-			{ "name": "Strength", "level": "Grand Master" }
-		]
-	},
-	{
-		"name": "Toughness",
-		"elements": ["Earth"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Endurance",
-		"elements": ["Earth"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Toughness", "level": "Expert" }]
-	},
-	{
-		"name": "Quick Healing",
-		"elements": ["Earth"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Toughness", "level": "Master" },
-			{ "name": "Endurance", "level": "Master" }
-		]
-	},
-	{
-		"name": "Knockback",
-		"elements": ["Earth"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Strength", "level": "Expert" },
-			{ "name": "Weapon Damage", "level": "Expert" }
-		]
-	},
-	{
-		"name": "Stun",
-		"elements": ["Earth"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Strength", "level": "Master" },
-			{ "name": "Weapon Damage", "level": "Master" }
-		]
-	},
-	{
-		"name": "All Weapons",
-		"elements": ["Fire"],
-		"level": "Basic",
-		"type": "One Shot",
-		"description": "This one-shot provides the knowledge to use any regular or artist weapon.",
-		"requirements": []
-	},
-	{
-		"name": "Dual Wield",
-		"elements": ["Fire", "Air"],
-		"level": "Basic",
-		"type": "One Shot",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Evoke Fear",
-		"elements": ["Fire"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Rally",
-		"elements": ["Fire"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Evoke Fear", "level": "Expert" }]
-	},
-	{
-		"name": "Coordination",
-		"elements": ["Fire"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Rally", "level": "Master" }]
-	},
-	{
-		"name": "Tactics",
-		"elements": ["Fire"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Coordination", "level": "Master" }]
-	},
-	{
-		"name": "Gem Craft",
-		"elements": ["Fire"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Rage",
-		"elements": ["Fire"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Delay Effect",
-		"elements": ["Fire"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Rage", "level": "Master" }]
-	},
-	{
-		"name": "Resist Fear",
-		"elements": ["Fire"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Taunt",
-		"elements": ["Fire"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Resist Fear", "level": "Expert" }]
-	},
-	{
-		"name": "Smithing",
-		"elements": ["Fire"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Soldier's Armor Training",
-		"elements": ["Fire"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Resist Physical",
-		"elements": ["Fire"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Soldier's Armor Training", "level": "Master" }
-		]
-	},
-	{
-		"name": "Block",
-		"elements": ["Fire"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			[
-				{ "name": "Weapon Damage", "level": "Expert" },
-				{ "name": "Shield Defense", "level": "Expert" }
-			]
-		]
-	},
-	{
-		"name": "Parry",
-		"elements": ["Fire"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Block", "level": "Expert" }]
-	},
-	{
-		"name": "Riposte",
-		"elements": ["Fire"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Block", "level": "Master" },
-			{ "name": "Parry", "level": "Master" }
-		]
-	},
-	{
-		"name": "Slay",
-		"elements": ["Fire"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Weapon Damage", "level": "Expert" }]
-	},
-	{
-		"name": "Eviscerate",
-		"elements": ["Fire"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Weapon Damage", "level": "Master" },
-			{ "name": "Slay", "level": "Expert" }
-		]
-	},
-	{
-		"name": "Death Blow",
-		"elements": ["Fire"],
-		"level": "Grand Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Weapon Damage", "level": "Grand Master" },
-			{ "name": "Eviscerate", "level": "Master" }
-		]
-	},
-	{
-		"name": "Speed of Blade",
-		"elements": ["Fire"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Weapon Damage", "level": "Master" }]
-	},
-	{
-		"name": "Press",
-		"elements": ["Fire"],
-		"level": "Grand Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Weapon Damage", "level": "Grand Master" },
-			{ "name": "Speed of Blade", "level": "Master" }
-		]
-	},
-	{
-		"name": "Air Magic",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Read Magic", "level":  "" }
-		]
-	},
-	{
-		"name": "Augury",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Soothsaying",
-		"elements": ["Water"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Augury", "level": "Expert" }]
-	},
-	{
-		"name": "Detect Lie",
-		"elements": ["Water"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Soothsaying", "level": "Master" }]
-	},
-	{
-		"name": "Destruction Magic",
-		"elements": ["Water"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Fire Magic", "level": "Master" },
-			{ "name": "Air Magic", "level": "Master" }
-		]
-	},
-	{
-		"name": "Disenchant",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Dream Magic",
-		"elements": ["Water"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Air Magic", "level": "Master" },
-			{ "name": "Water Magic", "level": "Master" }
-		]
-	},
-	{
-		"name": "Earth Magic",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Fire Magic",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "First Aid",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "One Shot",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Healing",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "First Aid", "level": "Basic" }]
-	},
-	{
-		"name": "Cure Disease/Toxin",
-		"elements": ["Water"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Healing", "level": "Expert" }]
-	},
-	{
-		"name": "Mend Wound",
-		"elements": ["Water"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Healing", "level": "Expert" }]
-	},
-	{
-		"name": "Remove Wound",
-		"elements": ["Water"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Healing", "level": "Master" }]
-	},
-	{
-		"name": "Raise Dead",
-		"elements": ["Water"],
-		"level": "Grand Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Healing", "level": "Grand Master" }]
-	},
-	{
-		"name": "Knowledge",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Research",
-		"elements": ["Water"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Knowledge", "level": "Expert" },
-			{ "name": "Read/Write", "level": "Basic" }
-		]
-	},
-	{
-		"name": "Mana",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Read Magic", "level": "Basic" }]
-	},
-	{
-		"name": "Protection Magic",
-		"elements": ["Water"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Earth Magic", "level": "Master" },
-			{ "name": "Water Magic", "level": "Master" }
-		]
-	},
-	{
-		"name": "Radiance Magic",
-		"elements": ["Water"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Earth Magic", "level": "Master" },
-			{ "name": "Fire Magic", "level": "Master" }
-		]
-	},
-	{
-		"name": "Read/Write",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "One Shot",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Read Magic",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "One Shot",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Relic Crafting",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Read/Write", "level": "Basic" },
-			{ "name": "Read Magic", "level": "Basic" }
-		]
-	},
-	{
-		"name": "Resist Elements",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Resist Magic",
-		"elements": ["Water"],
-		"level": "Expert",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Resist Elements", "level": "Expert" }]
-	},
-	{
-		"name": "Reflect Magic",
-		"elements": ["Water"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Resist Elements", "level": "Master" },
-			{ "name": "Resist Magic", "level": "Master" }
-		]
-	},
-	{
-		"name": "Ritualism",
-		"elements": ["Water"],
-		"level": "Master",
-		"type": "Skill",
-		"description": "",
-		"requirements": [
-			{ "name": "Earth Magic", "level": "Master" },
-			{ "name": "Fire Magic", "level": "Master" },
-			{ "name": "Water Magic", "level": "Master" },
-			{ "name": "Air Magic", "level": "Master" }
-		]
-	},
-	{
-		"name": "Sense Magic",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": []
-	},
-	{
-		"name": "Spell Weaving",
-		"elements": ["Water"],
-		"level": "Basic",
-		"type": "Skill",
-		"description": "",
-		"requirements": [{ "name": "Sense Magic", "level": "Master" }]
-	},
-	{
 		"name": "Water Magic",
 		"elements": ["Water"],
 		"level": "Basic",
 		"type": "Skill",
-		"description": "",
+		"description": "This skill allows you to cast Water spells up to your level of the Water Magic skill. It also grants you one use/level of Water Magic. You may expend a use of Water Magic to throw bursts of Water damage for a combat. These Packets deal Water damage equal to 2x your level of this skill.",
+		"requirements": []
+	},
+	{
+		"name": "Weapon Damage",
+		"elements": ["Air", "Fire", "Water", "Earth"],
+		"level": "Basic",
+		"type": "Skill",
+		"description": "Each level of this skill allows you to deal one additional point of damage with any 1-handed weapon you are trained in or 1½ points of damage (round down) with any great weapon you are trained in.",
 		"requirements": []
 	}
 ]

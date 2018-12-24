@@ -1,3 +1,8 @@
+interface ISkillField {
+	name: string;
+	value: string;
+}
+
 export default interface ISkillEmbed {
 	title: string;
 	description: string;
@@ -15,4 +20,5 @@ export default interface ISkillEmbed {
 		url: string,
 		icon_url: string,
 	};
+	fields: ISkillField[];
 }

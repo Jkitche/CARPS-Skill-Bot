@@ -4,7 +4,7 @@ import IConfig from "../Interface/IConfig.js";
 import IEmbedGenerator from "../Interface/IEmbedGenerator.js";
 import ISkillRepository from "../Interface/ISkillRepository.js";
 
-export default class CARPSSkillBot {
+export default class CARPSBot {
 	private client: Client;
 	private config: IConfig;
 	private embedGenerator: IEmbedGenerator;

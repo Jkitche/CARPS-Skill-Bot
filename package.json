@@ -6,12 +6,14 @@
 	"scripts": {
 		"start": "./node_modules/webpack/bin/webpack.js --watch",
 		"build": "./node_modules/webpack/bin/webpack.js",
-		"test": "jest --coverage",
+		"test": "jest --watchAll",
+		"coverage": "jest --coverage",
 		"docker-debug": "docker-compose up",
 		"start:prod": "NODE_ENV=production; node ./dist/carpsbot.js"
 	},
 	"dependencies": {
 		"discord.js": "^11.4.2",
+		"pdf2json": "^1.1.7",
 		"winston": "^3.1.0"
 	},
 	"devDependencies": {
@@ -20,6 +22,7 @@
 		"awesome-typescript-loader": "^5.2.1",
 		"friendly-errors-webpack-plugin": "^1.7.0",
 		"jest": "^23.6.0",
+		"jest-cli": "^23.6.0",
 		"jest-coverage-badges": "^1.0.0",
 		"ts-jest": "^23.10.5",
 		"tslint": "^5.11.0",
