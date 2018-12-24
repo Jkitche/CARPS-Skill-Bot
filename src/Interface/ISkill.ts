@@ -10,6 +10,6 @@ export default interface ISkill {
 	level: SkillLevel;
 	type: SkillType;
 	description: string;
-	descriptionExt: string|null;
+	descriptionExt?: string;
 	requirements: ISkillRequirement[];
 }

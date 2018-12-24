@@ -5,7 +5,7 @@ import ISkillEmbed from "../Interface/ISkillEmbed";
 import ISkillRequirement from "../Interface/ISkillRequirement";
 
 export default class EmbedGenerator implements IEmbedGenerator {
-	private MAX_EMBED_LENGTH = 1024;
+	private MAX_EMBED_LENGTH = 2048;
 	private TRUNCATED_MESSAGE = "\n\nDescription truncated. Please See Rulebook for full Description.";
 
 	private logger: Logger;
@@ -32,7 +32,7 @@ export default class EmbedGenerator implements IEmbedGenerator {
 
 		return {
 			title: skill.name,
-			description: "",
+			description,
 			url:
 				"http://carpsgame.com/printable%20forms/CARPS%20V6.4%20Final.pdf",
 			timestamp,
@@ -60,10 +60,6 @@ export default class EmbedGenerator implements IEmbedGenerator {
 				{
 					name: "Requirements:",
 					value: skillRequirements,
-				},
-				{
-					name: "Description:",
-					value: description,
 				},
 			],
 		};
